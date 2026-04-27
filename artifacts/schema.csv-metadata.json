@@ -1,0 +1,154 @@
+{
+    "@context": [
+        "http://www.w3.org/ns/csvw",
+        {
+            "@language": "cs"
+        }
+    ],
+    "@id": "0cb934ce-7046-42d4-a527-12b266091bef/table.csv-metadata.json",
+    "@type": "Table",
+    "url": "table.csv",
+    "tableSchema": {
+        "@type": "Schema",
+        "columns": [
+            {
+                "@type": "Column",
+                "name": "k%C3%B3d_%C5%A1ablony_ppp",
+                "titles": "kód_šablony_ppp",
+                "dc:title": {
+                    "@value": "kód šablony PPP",
+                    "@language": "cs"
+                },
+                "dc:description": {
+                    "@value": "Kód šablony (typu) generovaný při vytvoření typu. Kód typu je ve formátu: prefix PPP a pořadové číslo (např. PPP-12).",
+                    "@language": "cs"
+                },
+                "propertyUrl": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/kód-šablony-ppp"
+            },
+            {
+                "@type": "Column",
+                "name": "n%C3%A1zev_%C5%A1ablony_ppp",
+                "titles": "název_šablony_ppp",
+                "dc:title": {
+                    "@value": "název šablony PPP",
+                    "@language": "cs"
+                },
+                "dc:description": {
+                    "@value": "Název šablony (typu) práva, povinnosti a právní skutečnosti.",
+                    "@language": "cs"
+                },
+                "propertyUrl": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/název-šablony-ppp"
+            },
+            {
+                "@type": "Column",
+                "name": "platnost_%C5%A1ablony_ppp_od",
+                "titles": "platnost_šablony_ppp_od",
+                "dc:title": {
+                    "@value": "platnost šablony PPP od",
+                    "@language": "cs"
+                },
+                "dc:description": {
+                    "@value": "Datum, od kdy šablona (typ) platí.",
+                    "@language": "cs"
+                },
+                "propertyUrl": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/platnost-šablony-ppp-od"
+            },
+            {
+                "@type": "Column",
+                "name": "ppp_vznik%C3%A1_na_z%C3%A1klad%C4%9B_slu%C5%BEby_m%C3%A1_identifik%C3%A1tor_slu%C5%BEby",
+                "titles": "ppp_vzniká_na_základě_služby_má_identifikátor_služby",
+                "dc:title": {
+                    "@value": "Má identifikátor služby",
+                    "@language": "cs"
+                },
+                "dc:description": {
+                    "@value": "Automaticky (stejně jako v případě agendy nebo činnosti) generovaný kód sloužící pro databázové zpracování údajů.",
+                    "@language": "cs"
+                },
+                "propertyUrl": "https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby"
+            },
+            {
+                "@type": "Column",
+                "name": "ppp_vznik%C3%A1_na_z%C3%A1klad%C4%9B_slu%C5%BEby_m%C3%A1_n%C3%A1zev_slu%C5%BEby",
+                "titles": "ppp_vzniká_na_základě_služby_má_název_služby",
+                "dc:title": {
+                    "@value": "Má název služby",
+                    "@language": "cs"
+                },
+                "dc:description": {
+                    "@value": "Název by měl klientovi stručně a jasně vystihnout, o jakou službu se jedná. Důležité je, aby byl nezaměnitelný s jinou službou, ale stále velmi jednoduchý, srozumitelný a zapamatovatelný. Měřítkem je, že název služby je používaný (bude používán) v běžném hovoru lidí.",
+                    "@language": "cs"
+                },
+                "propertyUrl": "https://slovník.gov.cz/agendový/104/pojem/má-název-služby"
+            },
+            {
+                "@type": "Column",
+                "name": "ppp_vznik%C3%A1_na_z%C3%A1klad%C4%9B_slu%C5%BEby_je_poskytov%C3%A1na_v_r%C3%A1mci_agendy_m%C3%A1_k%C3%B3d_agendy",
+                "titles": "ppp_vzniká_na_základě_služby_je_poskytována_v_rámci_agendy_má_kód_agendy",
+                "dc:title": {
+                    "@value": "Má kód agendy",
+                    "@language": "cs"
+                },
+                "dc:description": {
+                    "@value": "Kód agendy je veřejným identifikátorem, který je jednoznačně přiřazen záznamu o agendě v číselníku agend v registru práv a povinností.",
+                    "@language": "cs"
+                },
+                "propertyUrl": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy"
+            },
+            {
+                "@type": "Column",
+                "name": "spr%C3%A1vnost_ppp_m%C3%A1_ov%C4%9B%C5%99ovat",
+                "titles": "správnost_ppp_má_ověřovat",
+                "dc:title": {
+                    "@value": "správnost PPP má ověřovat",
+                    "@language": "cs"
+                },
+                "dc:description": {
+                    "@value": "Právo na zápis práva, povinnosti nebo právní skutečnosti uplatní uživatel služby prostřednictvím Agentury u příslušného orgánu veřejné moci, který učinil podkladový úkon. Příslušný orgán veřejné moci osvědčí existenci práva, povinnosti nebo právní skutečnosti a potvrdí ji Agentuře, která ji zapíše do registru práv a povinností.",
+                    "@language": "cs"
+                },
+                "propertyUrl": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat",
+                "valueUrl": "{+spr%C3%A1vnost_ppp_m%C3%A1_ov%C4%9B%C5%99ovat}",
+                "datatype": "anyURI"
+            },
+            {
+                "@type": "Column",
+                "name": "spr%C3%A1vnost_ppp_m%C3%A1_ov%C4%9B%C5%99ovat",
+                "titles": "správnost_ppp_má_ověřovat",
+                "dc:title": {
+                    "@value": "správnost PPP má ověřovat",
+                    "@language": "cs"
+                },
+                "dc:description": {
+                    "@value": "Právo na zápis práva, povinnosti nebo právní skutečnosti uplatní uživatel služby prostřednictvím Agentury u příslušného orgánu veřejné moci, který učinil podkladový úkon. Příslušný orgán veřejné moci osvědčí existenci práva, povinnosti nebo právní skutečnosti a potvrdí ji Agentuře, která ji zapíše do registru práv a povinností.",
+                    "@language": "cs"
+                },
+                "propertyUrl": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat",
+                "valueUrl": "{+spr%C3%A1vnost_ppp_m%C3%A1_ov%C4%9B%C5%99ovat}",
+                "datatype": "anyURI"
+            },
+            {
+                "@type": "Column",
+                "name": "spr%C3%A1vnost_ppp_m%C3%A1_ov%C4%9B%C5%99ovat",
+                "titles": "správnost_ppp_má_ověřovat",
+                "dc:title": {
+                    "@value": "správnost PPP má ověřovat",
+                    "@language": "cs"
+                },
+                "dc:description": {
+                    "@value": "Právo na zápis práva, povinnosti nebo právní skutečnosti uplatní uživatel služby prostřednictvím Agentury u příslušného orgánu veřejné moci, který učinil podkladový úkon. Příslušný orgán veřejné moci osvědčí existenci práva, povinnosti nebo právní skutečnosti a potvrdí ji Agentuře, která ji zapíše do registru práv a povinností.",
+                    "@language": "cs"
+                },
+                "propertyUrl": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat",
+                "valueUrl": "{+spr%C3%A1vnost_ppp_m%C3%A1_ov%C4%9B%C5%99ovat}",
+                "datatype": "anyURI"
+            },
+            {
+                "@type": "Column",
+                "propertyUrl": "rdf:type",
+                "valueUrl": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti",
+                "virtual": true
+            }
+        ]
+    }
+}

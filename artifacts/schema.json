@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/schema.json",
+  "type": "object",
+  "required": [
+    "položky"
+  ],
+  "properties": {
+    "položky": {
+      "type": "array",
+      "items": {
+        "title": "Šablona práva, povinnosti nebo právní skutečnosti",
+        "description": "Seznam práv, povinností a právních skutečností (PPP), které lze na základě § 8 zákona č. 12/2020 Sb. zapsat do RPP. Šablona představuje číselník PPP, u kterých je prostřednictvím Portálu občana zápis do RPP umožněn.",
+        "type": "object",
+        "required": [
+          "id",
+          "type"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "iri"
+          },
+          "type": {
+            "oneOf": [
+              {
+                "const": "Šablona práva, povinnosti nebo právní skutečnosti"
+              },
+              {
+                "type": "array",
+                "contains": {
+                  "const": "Šablona práva, povinnosti nebo právní skutečnosti"
+                },
+                "items": {
+                  "type": "string"
+                }
+              }
+            ]
+          },
+          "kód_šablony_ppp": {
+            "title": "kód šablony PPP",
+            "description": "Kód šablony (typu) generovaný při vytvoření typu. Kód typu je ve formátu: prefix PPP a pořadové číslo (např. PPP-12).",
+            "type": "array",
+            "items": {
+              "title": "http://www.w3.org/2000/01/rdf-schema#Literal",
+              "type": "string"
+            }
+          },
+          "název_šablony_ppp": {
+            "title": "název šablony PPP",
+            "description": "Název šablony (typu) práva, povinnosti a právní skutečnosti.",
+            "type": "array",
+            "items": {
+              "title": "http://www.w3.org/2000/01/rdf-schema#Literal",
+              "type": "string"
+            }
+          },
+          "platnost_šablony_ppp_od": {
+            "title": "platnost šablony PPP od",
+            "description": "Datum, od kdy šablona (typ) platí.",
+            "type": "array",
+            "items": {
+              "title": "http://www.w3.org/2000/01/rdf-schema#Literal",
+              "type": "string"
+            }
+          },
+          "ppp_vzniká_na_základě_služby": {
+            "title": "PPP vzniká na základě služby",
+            "description": "Uživatel služby má právo na zápis práva, povinnosti nebo právní skutečnosti, která se jej týká a vyplývá z úkonu orgánu veřejné moci uvedeného v katalogu služeb, do registru práv a povinností, nejsou-li právo, povinnost nebo právní skutečnost zapsány v základním registru nebo agendovém informačním systému.",
+            "type": "array",
+            "items": {
+              "title": "Služba veřejné správy",
+              "description": "Služba veřejné správy představuje funkci (činnost) úřadu, která je vědomě poskytnuta konkrétním OVM konkrétnímu příjemci služby podle příslušného právního předpisu tak, že přináší příjemci vnímanou hodnotu, ať už v podobě benefitu nebo splnění zákonné povinnosti. Evidují se pouze takové služby VS, během nichž dochází k interakci mezi OVM a klientem či naopak, nikoli k interakci mezi OVM a OVM. Na službu VS lze také pohlížet jako na dosažení práva či naplnění povinnosti klienta, které nelze splnit jinak než interakcí či sérií interakcí mezi klientem a OVM. Služba se dělí podle toho, zdali je iniciována klientem nebo vykonávaná z moci úřední. Každá služba se skládá z nejméně jednoho úkonu.",
+              "type": "object",
+              "required": [
+                "id",
+                "type"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "format": "iri"
+                },
+                "type": {
+                  "oneOf": [
+                    {
+                      "const": "Služba veřejné správy"
+                    },
+                    {
+                      "type": "array",
+                      "contains": {
+                        "const": "Služba veřejné správy"
+                      },
+                      "items": {
+                        "type": "string"
+                      }
+                    }
+                  ]
+                },
+                "má_identifikátor_služby": {
+                  "title": "Má identifikátor služby",
+                  "description": "Automaticky (stejně jako v případě agendy nebo činnosti) generovaný kód sloužící pro databázové zpracování údajů.",
+                  "type": "array",
+                  "items": {
+                    "title": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                    "type": "string"
+                  }
+                },
+                "má_název_služby": {
+                  "title": "Má název služby",
+                  "description": "Název by měl klientovi stručně a jasně vystihnout, o jakou službu se jedná. Důležité je, aby byl nezaměnitelný s jinou službou, ale stále velmi jednoduchý, srozumitelný a zapamatovatelný. Měřítkem je, že název služby je používaný (bude používán) v běžném hovoru lidí.",
+                  "type": "array",
+                  "items": {
+                    "title": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                    "type": "string"
+                  }
+                },
+                "je_poskytována_v_rámci_agendy": {
+                  "title": "Je poskytována v rámci agendy",
+                  "description": "Přiřazuje úkon do agendy, v rámci které je vykonáván. Úkon je vždy vykonáván v právě jedné agendě. V jedné agendě může být vykonáváno více úkonů.",
+                  "type": "array",
+                  "items": {
+                    "title": "Agenda",
+                    "description": "Ucelená oblast působnosti orgánu veřejné moci nebo ucelená oblast působení soukromoprávního uživatele údajů.",
+                    "type": "object",
+                    "required": [
+                      "id",
+                      "type"
+                    ],
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "format": "iri"
+                      },
+                      "type": {
+                        "oneOf": [
+                          {
+                            "const": "Agenda"
+                          },
+                          {
+                            "type": "array",
+                            "contains": {
+                              "const": "Agenda"
+                            },
+                            "items": {
+                              "type": "string"
+                            }
+                          }
+                        ]
+                      },
+                      "má_kód_agendy": {
+                        "title": "Má kód agendy",
+                        "description": "Kód agendy je veřejným identifikátorem, který je jednoznačně přiřazen záznamu o agendě v číselníku agend v registru práv a povinností.",
+                        "type": "array",
+                        "items": {
+                          "title": "http://www.w3.org/2000/01/rdf-schema#Literal",
+                          "type": "string"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "správnost_ppp_má_ověřovat": {
+            "title": "správnost PPP má ověřovat",
+            "description": "Právo na zápis práva, povinnosti nebo právní skutečnosti uplatní uživatel služby prostřednictvím Agentury u příslušného orgánu veřejné moci, který učinil podkladový úkon. Příslušný orgán veřejné moci osvědčí existenci práva, povinnosti nebo právní skutečnosti a potvrdí ji Agentuře, která ji zapíše do registru práv a povinností.",
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "iri"
+            }
+          }
+        }
+      }
+    }
+  }
+}

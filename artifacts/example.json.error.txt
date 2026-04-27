@@ -1,0 +1,13 @@
+location is not defined
+
+ReferenceError: location is not defined
+    at exports.cwd (file:///home/runner/work/eqweqwebqwebqwebqwb/eqweqwebqwebqwebqwb/dataspecer-source-code/node_modules/json-schema-faker/dist/vendor.js:9:21639)
+    at $RefParser.parse (file:///home/runner/work/eqweqwebqwebqwebqwb/eqweqwebqwebqwebqwb/dataspecer-source-code/node_modules/json-schema-faker/dist/vendor.js:9:5371)
+    at $RefParser.resolve (file:///home/runner/work/eqweqwebqwebqwebqwb/eqweqwebqwebqwebqwb/dataspecer-source-code/node_modules/json-schema-faker/dist/vendor.js:9:6027)
+    at $RefParser.bundle (file:///home/runner/work/eqweqwebqwebqwebqwb/eqweqwebqwebqwebqwb/dataspecer-source-code/node_modules/json-schema-faker/dist/vendor.js:9:6429)
+    at $RefParser.bundle (file:///home/runner/work/eqweqwebqwebqwebqwb/eqweqwebqwebqwebqwb/dataspecer-source-code/node_modules/json-schema-faker/dist/vendor.js:9:6313)
+    at jsf.resolveWithContext (file:///home/runner/work/eqweqwebqwebqwebqwb/eqweqwebqwebqwebqwb/dataspecer-source-code/node_modules/json-schema-faker/dist/shared.js:6175:21)
+    at jsf.resolve (file:///home/runner/work/eqweqwebqwebqwebqwb/eqweqwebqwebqwebqwb/dataspecer-source-code/node_modules/json-schema-faker/dist/shared.js:6188:42)
+    at JsonExampleAdapter.generateJsonData (/home/runner/work/eqweqwebqwebqwebqwb/eqweqwebqwebqwebqwb/dataspecer-source-code/packages/json-example/src/json-example-adapter.ts:38:51)
+    at JsonExampleAdapter.generate (/home/runner/work/eqweqwebqwebqwebqwb/eqweqwebqwebqwebqwb/dataspecer-source-code/packages/json-example/src/json-example-adapter.ts:30:37)
+    at JsonExampleGenerator.generateToObject (/home/runner/work/eqweqwebqwebqwebqwb/eqweqwebqwebqwebqwb/dataspecer-source-code/packages/json-example/src/json-example-generator.ts:73:34)

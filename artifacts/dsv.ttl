@@ -1,0 +1,327 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix dsv: <https://w3id.org/dsv#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix cardinality: <https://w3id.org/dsv/cardinality#>.
+@prefix requirement: <https://w3id.org/dsv/requirement-level#>.
+@prefix role: <https://w3id.org/dsv/class-role#>.
+@prefix prof: <http://www.w3.org/ns/dx/prof/>.
+
+
+<> a prof:Profile, dsv:ApplicationProfile.
+
+<šablona-práva--povinnosti-nebo-právní-skutečnosti> dct:isPartOf <>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti>
+];
+    a dsv:ClassProfile;
+    dsv:class <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti>.
+
+<služba-veřejné-správy> dct:isPartOf <>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy>
+];
+    a dsv:ClassProfile;
+    dsv:class <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy>.
+
+<agenda> dct:isPartOf <>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda>
+];
+    a dsv:ClassProfile;
+    dsv:class <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda>.
+
+<orgán-veřejné-moci-nebo-kategorie> dct:isPartOf <>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie>
+];
+    a dsv:ClassProfile;
+    dsv:class <https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie>.
+
+<poskytování-úkonu> dct:isPartOf <>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonu>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonu>
+];
+    a dsv:ClassProfile;
+    dsv:class <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonu>.
+
+<orgán-veřejné-moci> dct:isPartOf <>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci>
+];
+    a dsv:ClassProfile;
+    dsv:class <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci>;
+    dct:isPartOf <>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci>
+];
+    a dsv:ClassProfile;
+    dsv:class <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci>.
+
+<subjekt-práva> dct:isPartOf <>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-práva>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-práva>
+];
+    a dsv:ClassProfile;
+    dsv:class <https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-práva>.
+
+<ppp-vzniká-na-základě-služby> dct:isPartOf <>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/ppp-vzniká-na-základě-služby>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/ppp-vzniká-na-základě-služby>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/ppp-vzniká-na-základě-služby>;
+    dsv:domain <šablona-práva--povinnosti-nebo-právní-skutečnosti>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <služba-veřejné-správy>.
+
+<je-poskytována-v-rámci-agendy> dct:isPartOf <>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://slovník.gov.cz/agendový/104/pojem/je-poskytována-v-rámci-agendy>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://slovník.gov.cz/agendový/104/pojem/je-poskytována-v-rámci-agendy>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://slovník.gov.cz/agendový/104/pojem/je-poskytována-v-rámci-agendy>;
+    dsv:domain <služba-veřejné-správy>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <agenda>.
+
+<správnost-ppp-má-ověřovat> dct:isPartOf <>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat>;
+    dsv:domain <šablona-práva--povinnosti-nebo-právní-skutečnosti>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <orgán-veřejné-moci-nebo-kategorie>;
+    dct:isPartOf <>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat>;
+    dsv:domain <šablona-práva--povinnosti-nebo-právní-skutečnosti>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <orgán-veřejné-moci-nebo-kategorie>;
+    dct:isPartOf <>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat>;
+    dsv:domain <šablona-práva--povinnosti-nebo-právní-skutečnosti>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <orgán-veřejné-moci-nebo-kategorie>.
+
+<má-poskytovatele> dct:isPartOf <>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-poskytovatele>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-poskytovatele>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-poskytovatele>;
+    dsv:domain <poskytování-úkonu>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <orgán-veřejné-moci-nebo-kategorie>.
+
+<kód-šablony-ppp> dct:isPartOf <>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/kód-šablony-ppp>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/kód-šablony-ppp>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/kód-šablony-ppp>;
+    dsv:domain <šablona-práva--povinnosti-nebo-právní-skutečnosti>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<název-šablony-ppp> dct:isPartOf <>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/název-šablony-ppp>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/název-šablony-ppp>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/název-šablony-ppp>;
+    dsv:domain <šablona-práva--povinnosti-nebo-právní-skutečnosti>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<platnost-šablony-ppp-od> dct:isPartOf <>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/platnost-šablony-ppp-od>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/platnost-šablony-ppp-od>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/platnost-šablony-ppp-od>;
+    dsv:domain <šablona-práva--povinnosti-nebo-právní-skutečnosti>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<má-název-služby> dct:isPartOf <>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://slovník.gov.cz/agendový/104/pojem/má-název-služby>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://slovník.gov.cz/agendový/104/pojem/má-název-služby>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://slovník.gov.cz/agendový/104/pojem/má-název-služby>;
+    dsv:domain <služba-veřejné-správy>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<má-identifikátor-služby> dct:isPartOf <>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby>;
+    dsv:domain <služba-veřejné-správy>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<má-kód-agendy> dct:isPartOf <>;
+    a dsv:TermProfile;
+    dsv:reusesPropertyValue [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedFromResource <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy>
+], [
+  a dsv:PropertyValueReuse;
+  dsv:reusedProperty skos:definition;
+  dsv:reusedFromResource <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy>
+];
+    dsv:cardinality cardinality:0n;
+    dsv:property <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy>;
+    dsv:domain <agenda>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.

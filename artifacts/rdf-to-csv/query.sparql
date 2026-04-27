@@ -1,0 +1,42 @@
+PREFIX ns1: <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/>
+PREFIX ns2: <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/>
+PREFIX ns3: <https://slovník.gov.cz/agendový/104/pojem/>
+SELECT (?v2 AS ?kód_šablony_ppp) (?v3 AS ?název_šablony_ppp) (?v4 AS ?platnost_šablony_ppp_od) (?v6 AS ?ppp_vzniká_na_základě_služby_má_identifikátor_služby) (?v7 AS ?ppp_vzniká_na_základě_služby_má_název_služby) (?v9 AS ?ppp_vzniká_na_základě_služby_je_poskytována_v_rámci_agendy_má_kód_agendy) (?v10 AS ?správnost_ppp_má_ověřovat) (?v11 AS ?správnost_ppp_má_ověřovat) (?v12 AS ?správnost_ppp_má_ověřovat)
+WHERE {
+  ?v1 a ns1:šablona-práva--povinnosti-nebo-právní-skutečnosti .
+  OPTIONAL {
+    ?v1 ns1:kód-šablony-ppp ?v2 .
+  }
+  OPTIONAL {
+    ?v1 ns1:název-šablony-ppp ?v3 .
+  }
+  OPTIONAL {
+    ?v1 ns1:platnost-šablony-ppp-od ?v4 .
+  }
+  OPTIONAL {
+    ?v5 a ns2:služba-veřejné-správy .
+    OPTIONAL {
+      ?v5 ns3:má-identifikátor-služby ?v6 .
+    }
+    OPTIONAL {
+      ?v5 ns3:má-název-služby ?v7 .
+    }
+    OPTIONAL {
+      ?v8 a ns2:agenda .
+      OPTIONAL {
+        ?v8 ns2:má-kód-agendy ?v9 .
+      }
+      ?v5 ns3:je-poskytována-v-rámci-agendy ?v8 .
+    }
+    ?v1 ns1:ppp-vzniká-na-základě-služby ?v5 .
+  }
+  OPTIONAL {
+    ?v1 ns1:správnost-ppp-má-ověřovat ?v10 .
+  }
+  OPTIONAL {
+    ?v1 ns1:správnost-ppp-má-ověřovat ?v11 .
+  }
+  OPTIONAL {
+    ?v1 ns1:správnost-ppp-má-ověřovat ?v12 .
+  }
+}

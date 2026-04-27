@@ -1,0 +1,47 @@
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+<d6b0ea53b3a64848b498a06f7653a493agendaShExShape> IRI{
+	a [<https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda>] ;
+	<https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy> rdfs:Literal *
+		// rdfs:label	"Má kód agendy"
+		// rdfs:comment	"Kód agendy je veřejným identifikátorem, který je jednoznačně přiřazen záznamu o agendě v číselníku agend v registru práv a povinností."
+}
+<b8e78747b92f2d7b3cdd6a61c8e1f387služba_veřejné_správyShExShape> IRI{
+	a [<https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy>] ;
+	<https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby> rdfs:Literal *
+		// rdfs:label	"Má identifikátor služby"
+		// rdfs:comment	"Automaticky (stejně jako v případě agendy nebo činnosti) generovaný kód sloužící pro databázové zpracování údajů." ;
+	<https://slovník.gov.cz/agendový/104/pojem/má-název-služby> rdfs:Literal *
+		// rdfs:label	"Má název služby"
+		// rdfs:comment	"Název by měl klientovi stručně a jasně vystihnout, o jakou službu se jedná. Důležité je, aby byl nezaměnitelný s jinou službou, ale stále velmi jednoduchý, srozumitelný a zapamatovatelný. Měřítkem je, že název služby je používaný (bude používán) v běžném hovoru lidí." ;
+	<https://slovník.gov.cz/agendový/104/pojem/je-poskytována-v-rámci-agendy> @<d6b0ea53b3a64848b498a06f7653a493agendaShExShape> *
+		// rdfs:label	"Je poskytována v rámci agendy"
+		// rdfs:comment	"Přiřazuje úkon do agendy, v rámci které je vykonáván. Úkon je vždy vykonáván v právě jedné agendě. V jedné agendě může být vykonáváno více úkonů."
+}
+<9d7dde0a21fe4621236f0dd02cbe7472šablona_práva,_povinnosti_nebo_právní_skutečnostiShExShape> IRI{
+	a [<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti>] ;
+	<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/kód-šablony-ppp> rdfs:Literal *
+		// rdfs:label	"kód šablony PPP"
+		// rdfs:comment	"Kód šablony (typu) generovaný při vytvoření typu. Kód typu je ve formátu: prefix PPP a pořadové číslo (např. PPP-12)." ;
+	<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/název-šablony-ppp> rdfs:Literal *
+		// rdfs:label	"název šablony PPP"
+		// rdfs:comment	"Název šablony (typu) práva, povinnosti a právní skutečnosti." ;
+	<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/platnost-šablony-ppp-od> rdfs:Literal *
+		// rdfs:label	"platnost šablony PPP od"
+		// rdfs:comment	"Datum, od kdy šablona (typ) platí." ;
+	<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/ppp-vzniká-na-základě-služby> @<b8e78747b92f2d7b3cdd6a61c8e1f387služba_veřejné_správyShExShape> *
+		// rdfs:label	"PPP vzniká na základě služby"
+		// rdfs:comment	"Uživatel služby má právo na zápis práva, povinnosti nebo právní skutečnosti, která se jej týká a vyplývá z úkonu orgánu veřejné moci uvedeného v katalogu služeb, do registru práv a povinností, nejsou-li právo, povinnost nebo právní skutečnost zapsány v základním registru nebo agendovém informačním systému." ;
+	<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat> IRI *
+		// rdfs:label	"správnost PPP má ověřovat"
+		// rdfs:comment	"Právo na zápis práva, povinnosti nebo právní skutečnosti uplatní uživatel služby prostřednictvím Agentury u příslušného orgánu veřejné moci, který učinil podkladový úkon. Příslušný orgán veřejné moci osvědčí existenci práva, povinnosti nebo právní skutečnosti a potvrdí ji Agentuře, která ji zapíše do registru práv a povinností." ;
+	<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat> IRI IRI *
+		// rdfs:label	"správnost PPP má ověřovat"
+		// rdfs:comment	"Právo na zápis práva, povinnosti nebo právní skutečnosti uplatní uživatel služby prostřednictvím Agentury u příslušného orgánu veřejné moci, který učinil podkladový úkon. Příslušný orgán veřejné moci osvědčí existenci práva, povinnosti nebo právní skutečnosti a potvrdí ji Agentuře, která ji zapíše do registru práv a povinností." ;
+	<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat> IRI IRI *
+		// rdfs:label	"správnost PPP má ověřovat"
+		// rdfs:comment	"Právo na zápis práva, povinnosti nebo právní skutečnosti uplatní uživatel služby prostřednictvím Agentury u příslušného orgánu veřejné moci, který učinil podkladový úkon. Příslušný orgán veřejné moci osvědčí existenci práva, povinnosti nebo právní skutečnosti a potvrdí ji Agentuře, která ji zapíše do registru práv a povinností." ;
+	<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat> IRI *
+		// rdfs:label	"správnost PPP má ověřovat"
+		// rdfs:comment	"Právo na zápis práva, povinnosti nebo právní skutečnosti uplatní uživatel služby prostřednictvím Agentury u příslušného orgánu veřejné moci, který učinil podkladový úkon. Příslušný orgán veřejné moci osvědčí existenci práva, povinnosti nebo právní skutečnosti a potvrdí ji Agentuře, která ji zapíše do registru práv a povinností."
+}

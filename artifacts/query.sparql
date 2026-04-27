@@ -1,0 +1,79 @@
+PREFIX ns0: <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/>
+PREFIX ns1: <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/>
+PREFIX ns2: <https://slovník.gov.cz/agendový/104/pojem/>
+PREFIX ns3: <https://slovník.gov.cz/veřejný-sektor/pojem/>
+CONSTRUCT {
+  ?v0 a ns0:šablona-práva--povinnosti-nebo-právní-skutečnosti .
+  ?v0 ns0:kód-šablony-ppp ?v1 .
+  ?v0 ns0:název-šablony-ppp ?v2 .
+  ?v0 ns0:platnost-šablony-ppp-od ?v3 .
+  ?v0 ns0:ppp-vzniká-na-základě-služby ?v4 .
+  ?v4 a ns1:služba-veřejné-správy .
+  ?v4 ns2:má-identifikátor-služby ?v5 .
+  ?v4 ns2:má-název-služby ?v6 .
+  ?v4 ns2:je-poskytována-v-rámci-agendy ?v7 .
+  ?v7 a ns1:agenda .
+  ?v7 ns1:má-kód-agendy ?v8 .
+  ?v0 ns0:správnost-ppp-má-ověřovat ?v9 .
+  ?v9 a ns3:subjekt-práva .
+  ?v0 ns0:správnost-ppp-má-ověřovat ?v10 .
+  ?v10 a ns2:orgán-veřejné-moci-nebo-kategorie .
+  ?v0 ns0:správnost-ppp-má-ověřovat ?v11 .
+  ?v11 a ns1:orgán-veřejné-moci .
+  ?v0 ns0:správnost-ppp-má-ověřovat ?v12 .
+  ?v12 a ns2:orgán-veřejné-moci-nebo-kategorie .
+}
+WHERE {
+  ?v0 a ns0:šablona-práva--povinnosti-nebo-právní-skutečnosti .
+  OPTIONAL {
+    ?v0 ns0:kód-šablony-ppp ?v1 .
+  }
+  OPTIONAL {
+    ?v0 ns0:název-šablony-ppp ?v2 .
+  }
+  OPTIONAL {
+    ?v0 ns0:platnost-šablony-ppp-od ?v3 .
+  }
+  OPTIONAL {
+    ?v0 ns0:ppp-vzniká-na-základě-služby ?v4 .
+    OPTIONAL {
+      ?v4 a ns1:služba-veřejné-správy .
+    }
+    OPTIONAL {
+      ?v4 ns2:má-identifikátor-služby ?v5 .
+    }
+    OPTIONAL {
+      ?v4 ns2:má-název-služby ?v6 .
+    }
+    OPTIONAL {
+      ?v4 ns2:je-poskytována-v-rámci-agendy ?v7 .
+      OPTIONAL {
+        ?v7 a ns1:agenda .
+      }
+      OPTIONAL {
+        ?v7 ns1:má-kód-agendy ?v8 .
+      }
+    }
+  }
+  OPTIONAL {
+    ?v0 ns0:správnost-ppp-má-ověřovat ?v9 .
+    OPTIONAL {
+      ?v9 a ns3:subjekt-práva .
+    }
+  }
+  OPTIONAL {
+    {
+      ?v0 ns0:správnost-ppp-má-ověřovat ?v10 .
+      ?v10 a ns2:orgán-veřejné-moci-nebo-kategorie .
+    } UNION {
+      ?v0 ns0:správnost-ppp-má-ověřovat ?v11 .
+      ?v11 a ns1:orgán-veřejné-moci .
+    }
+  }
+  OPTIONAL {
+    ?v0 ns0:správnost-ppp-má-ověřovat ?v12 .
+    OPTIONAL {
+      ?v12 a ns2:orgán-veřejné-moci-nebo-kategorie .
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@startuml
+set namespaceSeparator none
+class "Subjekt práva" {
+}
+
+class "Orgán veřejné moci" {
+}
+
+class "Orgán veřejné moci nebo kategorie" {
+}
+
+class "Šablona práva, povinnosti nebo právní skutečnosti" {
+  "platnost šablony PPP od": http://www.w3.org/2000/01/rdf-schema#Literal
+  "název šablony PPP": http://www.w3.org/2000/01/rdf-schema#Literal
+  "kód šablony PPP": http://www.w3.org/2000/01/rdf-schema#Literal
+}
+
+class Agenda {
+  "Má kód agendy": http://www.w3.org/2000/01/rdf-schema#Literal
+}
+
+class "Služba veřejné správy" {
+  "Má identifikátor služby": http://www.w3.org/2000/01/rdf-schema#Literal
+  "Má název služby": http://www.w3.org/2000/01/rdf-schema#Literal
+}
+
+"Šablona práva, povinnosti nebo právní skutečnosti" -- "Orgán veřejné moci nebo kategorie" :  "správnost PPP má ověřovat"
+"Šablona práva, povinnosti nebo právní skutečnosti" -- "Služba veřejné správy" :  "PPP vzniká na základě služby"
+"Služba veřejné správy" -- Agenda :  "Je poskytována v rámci agendy"
+@enduml

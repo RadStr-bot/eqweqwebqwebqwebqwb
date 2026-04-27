@@ -1,0 +1,3594 @@
+
+
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <title>TestovacíDatovéSchéma</title>
+    <meta name="color-scheme" content="light dark">
+    <script type="application/ld+json">
+      {
+      "@id": "",
+      "@type": [
+        "dsv:VocabularySpecificationDocument",
+        "dsv:ApplicationProfileSpecificationDocument",
+        "adms:AssetDistribution",
+        "prof:ResourceDescriptor"
+      ],
+      "hasArtifact": "",
+      "hasRole": "role:specification",
+      "format": "filetype:HTML",
+      "inSpecificationOf": [
+        {
+          "@id": "",
+          "@type": [
+            "owl:Ontology",
+            "prof:Profile"
+          ],
+          "title": {
+            "cs": "TestovacíDatovéSchéma"
+          },
+          "isProfileOf": [],
+          "hasResource": [
+            {
+              "@id": "spec",
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../model.owl.ttl",
+              "hasRole": "role:vocabulary",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": [
+                "http://www.w3.org/2000/01/rdf-schema#",
+                "http://www.w3.org/2002/07/owl"
+              ]
+            },
+            {
+              "@id": "",
+              "@type": [
+                "dsv:VocabularySpecificationDocument",
+                "dsv:ApplicationProfileSpecificationDocument",
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "",
+              "hasRole": "role:specification",
+              "format": "filetype:HTML"
+            }
+          ]
+        },
+        {
+          "@id": "",
+          "@type": [
+            "dsv:ApplicationProfile",
+            "prof:Profile"
+          ],
+          "title": {
+            "cs": "TestovacíDatovéSchéma"
+          },
+          "isProfileOf": [],
+          "hasResource": [
+            {
+              "@id": "dsv",
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../dsv.ttl",
+              "hasRole": "role:constraints",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": [
+                "prof:Profile",
+                "dsv:ApplicationProfile"
+              ]
+            },
+            {
+              "@id": "shacl",
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../shacl.ttl",
+              "hasRole": "role:constraints",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "https://www.w3.org/TR/shacl/"
+            },
+            {
+              "@id": "structure-model/šablona-práva,-povinnosti-nebo-právní-skutečnosti/",
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../%C5%A1ablona-pr%C3%A1va,-povinnosti-nebo-pr%C3%A1vn%C3%AD-skute%C4%8Dnosti/structure.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:Structure"
+            },
+            {
+              "@id": "generator-configuration#",
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../generator-configuration.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:StructureConfiguration"
+            },
+            {
+              "@id": "",
+              "@type": [
+                "dsv:VocabularySpecificationDocument",
+                "dsv:ApplicationProfileSpecificationDocument",
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "",
+              "hasRole": "role:specification",
+              "format": "filetype:HTML"
+            },
+            {
+              "@id": "0cb934ce-7046-42d4-a527-12b266091bef#jsonschema",
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../schema.json",
+              "hasRole": "role:schema",
+              "format": "filetype:JSON",
+              "conformsTo": "https://json-schema.org/draft/2020-12/schema"
+            },
+            {
+              "@id": "0cb934ce-7046-42d4-a527-12b266091bef#jsonLd",
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "../context.jsonld",
+              "hasRole": "role:schema",
+              "format": "filetype:JSON_LD",
+              "conformsTo": "http://www.w3.org/ns/json-ld"
+            }
+          ]
+        }
+      ],
+      "@context": {
+        "@version": 1.1,
+        "prof": "http://www.w3.org/ns/dx/prof/",
+        "role": "prof:role/",
+        "dsv": "https://w3id.org/dsv#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "adms": "http://www.w3.org/ns/adms#",
+        "filetype": "http://publications.europa.eu/resource/authority/file-type/",
+        "title": {
+          "@id": "http://purl.org/dc/terms/title",
+          "@container": "@language"
+        },
+        "description": {
+          "@id": "http://purl.org/dc/terms/description",
+          "@container": "@language"
+        },
+        "conformsTo": {
+          "@id": "http://purl.org/dc/terms/conformsTo",
+          "@type": "@id",
+          "@container": "@set"
+        },
+        "format": {
+          "@id": "http://purl.org/dc/terms/format",
+          "@type": "@id"
+        },
+        "hasRole": {
+          "@id": "prof:hasRole",
+          "@type": "@id"
+        },
+        "hasArtifact": {
+          "@id": "prof:hasArtifact",
+          "@type": "@id"
+        },
+        "inSpecificationOf": {
+          "@reverse": "prof:hasResource",
+          "@type": "@id",
+          "@context": {
+            "title": {
+              "@id": "http://purl.org/dc/terms/title",
+              "@container": "@language"
+            },
+            "description": {
+              "@id": "http://purl.org/dc/terms/description",
+              "@container": "@language"
+            },
+            "hasToken": {
+              "@id": "prof:hasToken",
+              "@type": "xsd:token"
+            },
+            "isProfileOf": {
+              "@id": "prof:isProfileOf",
+              "@container": "@set",
+              "@context": {
+                "title": {
+                  "@id": "http://purl.org/dc/terms/title",
+                  "@container": "@language"
+                },
+                "hasResource": {
+                  "@id": "prof:hasResource",
+                  "@container": "@set",
+                  "@context": {
+                    "hasArtifact": {
+                      "@id": "prof:hasArtifact",
+                      "@type": "@id"
+                    }
+                  }
+                }
+              }
+            },
+            "hasResource": {
+              "@id": "prof:hasResource",
+              "@container": "@set",
+              "@context": {
+                "conformsTo": {
+                  "@id": "http://purl.org/dc/terms/conformsTo",
+                  "@type": "@id",
+                  "@container": "@set"
+                },
+                "format": {
+                  "@id": "http://purl.org/dc/terms/format",
+                  "@type": "@id"
+                },
+                "hasRole": {
+                  "@id": "prof:hasRole",
+                  "@type": "@id"
+                },
+                "hasArtifact": {
+                  "@id": "prof:hasArtifact",
+                  "@type": "@id"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    </script>
+    <script
+      src="https://www.w3.org/Tools/respec/respec-w3c"
+      class="remove"
+      defer
+    ></script>
+    <script class="remove">
+    // All config options at https://respec.org/docs/
+    var respecConfig = {
+      specStatus: "base",
+      editors: [{ name: "Dataspecer", url: "https://dataspecer.com" }],
+      //github: "some-org/mySpec",
+      shortName: "todo",
+      historyURI: null,
+      //thisVersion: "https://xx.github.io/yy/",
+      //latestVersion: "https://xx.github.io/yy/",
+      //publishDate: "2025-09-29",
+      //github: "https://github.com/org/repo",
+      //xref: "web-platform",
+      //group: "my-working-group",
+      //otherLinks: [{
+      //    key: "Repository",
+      //    data: [{
+      //        value: "GitHub",
+      //        href: "https://github.com/org/repo"
+      //    }],
+      //}],
+      localBiblio: {
+            "DCAT-AP": {
+                title: "DCAT Application Profile for data portals in Europe",
+                href: "https://semiceu.github.io/DCAT-AP/releases/3.0.1/",
+                date: "2024"
+            },
+            "GeoDCAT-AP": {
+                title: "GeoDCAT Application Profile for data portals in Europe",
+                href: "https://semiceu.github.io/GeoDCAT-AP/releases/3.0.0/",
+                date: "2024"
+            },
+            "DCAT-AP-HVD": {
+                title: "DCAT-AP HVD Application Profile",
+                href: "https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/",
+                date: "2024"
+            }
+        },};</script>
+    
+    <style>
+      .figure img, .sidefigure img, figure img, .figure object, .sidefigure object, figure object, img, .img {
+        max-width: 100%;
+        margin: auto;
+        height: auto;
+      }
+    
+      table.simple {
+        margin: auto;
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+    
+      table.simple th {
+        padding: 3px 10px;
+        text-align: left;
+      }
+    
+      table.simple td {
+        border-top: 1px solid #ddd;
+        padding: 3px 10px;
+      }
+    </style>  </head>
+  <body>
+    <p class="copyright"></p>
+    <section id="abstract">
+      <p>
+      Tento soubor dokumentuje
+      <strong>TestovacíDatovéSchéma</strong>.</p>
+    </section>
+    <section>
+      <h2>Úvod</h2>
+      <p>Toto je úvod</p>
+      </section>
+    <section>
+      <h2>Přehled</h2>
+
+    </section>
+
+
+
+      <section>
+          <h2>Profily tříd</h2>
+
+          <section id="agenda">
+            <h4>Agenda</h4>
+          
+            <table class="def">
+              <tr>
+                <td>IRI profilovaných tříd</td>
+                <td>
+                    
+                    <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda">https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="agenda">agenda</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>Agenda</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Ucelená oblast působnosti orgánu veřejné moci nebo ucelená oblast působení soukromoprávního uživatele údajů.</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchie</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiluje
+                třídu
+                
+                <a href="#agenda">Agenda</a> (<a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda">https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda</a>)
+                  <br />Definice: <i>Ucelená oblast působnosti orgánu veřejné moci nebo ucelená oblast působení soukromoprávního uživatele údajů.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+              <p>Zpětné asociace</p>
+              <ul>
+                  <li>z domény <a href="#služba-veřejné-správy"></a> → <a href="#je-poskytována-v-rámci-agendy"></a></li>
+              </ul>
+          
+              <section id="má-kód-agendy">
+                <h4>Má kód agendy</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy">https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="má-kód-agendy">má-kód-agendy</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>Má kód agendy</td>
+                  </tr>
+                  <tr>
+                    <td>Definice</td>
+                    <td>Kód agendy je veřejným identifikátorem, který je jednoznačně přiřazen záznamu o agendě v číselníku agend v registru práv a povinností.</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#agenda">Agenda</a>
+              
+                          [0..*]
+              
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+              
+                          [0..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    vlastnost
+                    
+                    <a href="#má-kód-agendy">Má kód agendy</a> (<a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy">https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy</a>)
+                      <br />Definice: <i>Kód agendy je veřejným identifikátorem, který je jednoznačně přiřazen záznamu o agendě v číselníku agend v registru práv a povinností.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                </table>
+              </section>
+          </section>          <section id="orgán-veřejné-moci">
+            <h4>Orgán veřejné moci</h4>
+          
+            <table class="def">
+              <tr>
+                <td>IRI profilovaných tříd</td>
+                <td>
+                    
+                    <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci">https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="orgán-veřejné-moci">orgán-veřejné-moci</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>Orgán veřejné moci</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Orgánem veřejné moci se rozumí státní orgán, územní samosprávný celek a fyzická nebo právnická osoba, byla-li jí svěřena působnost v oblasti veřejné správy.</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchie</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiluje
+                třídu
+                
+                <a href="#orgán-veřejné-moci">Orgán veřejné moci</a> (<a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci">https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci</a>)
+                  <br />Definice: <i>Orgánem veřejné moci se rozumí státní orgán, územní samosprávný celek a fyzická nebo právnická osoba, byla-li jí svěřena působnost v oblasti veřejné správy.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializuje
+                třídu
+                
+                <a href="#orgán-veřejné-moci-nebo-kategorie">Orgán veřejné moci nebo kategorie</a> (<a href="https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie">https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie</a>)
+                  <br />Definice: <i>Orgán veřejné moci nebo kategorie</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                      <li>
+                                  specializuje
+                třídu
+                
+                <a href="#orgán-veřejné-moci">Orgán veřejné moci</a> (<a href="https://slovník.gov.cz/veřejný-sektor/pojem/orgán-veřejné-moci">https://slovník.gov.cz/veřejný-sektor/pojem/orgán-veřejné-moci</a>)
+                  <br />Definice: <i>Orgán veřejné moci  je organizace, která reprezentuje veřejnou moc a je ze zákona oprávněna autoritativně rozhodovat o právech a povinnostech osob.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializuje
+                třídu
+                
+                <a href="#organizace">Organizace</a> (<a href="https://slovník.gov.cz/veřejný-sektor/pojem/organizace">https://slovník.gov.cz/veřejný-sektor/pojem/organizace</a>)
+                  <br />Definice: <i>Organizace je uskupení lidí, které je agentem.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializuje
+                třídu
+                
+                <a href="#právnická-osoba">Právnická osoba</a> (<a href="https://slovník.gov.cz/veřejný-sektor/pojem/právnická-osoba">https://slovník.gov.cz/veřejný-sektor/pojem/právnická-osoba</a>)
+                  <br />Definice: <i>Právnická osoba je organizací, která je subjektem práva.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializuje
+                třídu
+                
+                <a href="#subjekt-práva">Subjekt práva</a> (<a href="https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-práva">https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-práva</a>)
+                  <br />Definice: <i>Subjekt práva je osoba,  která se účastní právních vztahů.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+          
+          
+          </section>          <section id="orgán-veřejné-moci">
+            <h4>Orgán veřejné moci</h4>
+          
+            <table class="def">
+              <tr>
+                <td>IRI profilovaných tříd</td>
+                <td>
+                    
+                    <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci">https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="orgán-veřejné-moci">orgán-veřejné-moci</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>Orgán veřejné moci</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Orgánem veřejné moci se rozumí státní orgán, územní samosprávný celek a fyzická nebo právnická osoba, byla-li jí svěřena působnost v oblasti veřejné správy.</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchie</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiluje
+                třídu
+                
+                <a href="#orgán-veřejné-moci">Orgán veřejné moci</a> (<a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci">https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci</a>)
+                  <br />Definice: <i>Orgánem veřejné moci se rozumí státní orgán, územní samosprávný celek a fyzická nebo právnická osoba, byla-li jí svěřena působnost v oblasti veřejné správy.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializuje
+                třídu
+                
+                <a href="#orgán-veřejné-moci-nebo-kategorie">Orgán veřejné moci nebo kategorie</a> (<a href="https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie">https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie</a>)
+                  <br />Definice: <i>Orgán veřejné moci nebo kategorie</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                      <li>
+                                  specializuje
+                třídu
+                
+                <a href="#orgán-veřejné-moci">Orgán veřejné moci</a> (<a href="https://slovník.gov.cz/veřejný-sektor/pojem/orgán-veřejné-moci">https://slovník.gov.cz/veřejný-sektor/pojem/orgán-veřejné-moci</a>)
+                  <br />Definice: <i>Orgán veřejné moci  je organizace, která reprezentuje veřejnou moc a je ze zákona oprávněna autoritativně rozhodovat o právech a povinnostech osob.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializuje
+                třídu
+                
+                <a href="#organizace">Organizace</a> (<a href="https://slovník.gov.cz/veřejný-sektor/pojem/organizace">https://slovník.gov.cz/veřejný-sektor/pojem/organizace</a>)
+                  <br />Definice: <i>Organizace je uskupení lidí, které je agentem.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializuje
+                třídu
+                
+                <a href="#právnická-osoba">Právnická osoba</a> (<a href="https://slovník.gov.cz/veřejný-sektor/pojem/právnická-osoba">https://slovník.gov.cz/veřejný-sektor/pojem/právnická-osoba</a>)
+                  <br />Definice: <i>Právnická osoba je organizací, která je subjektem práva.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializuje
+                třídu
+                
+                <a href="#subjekt-práva">Subjekt práva</a> (<a href="https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-práva">https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-práva</a>)
+                  <br />Definice: <i>Subjekt práva je osoba,  která se účastní právních vztahů.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+          
+          
+          </section>          <section id="orgán-veřejné-moci-nebo-kategorie">
+            <h4>Orgán veřejné moci nebo kategorie</h4>
+          
+            <table class="def">
+              <tr>
+                <td>IRI profilovaných tříd</td>
+                <td>
+                    
+                    <a href="https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie">https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="orgán-veřejné-moci-nebo-kategorie">orgán-veřejné-moci-nebo-kategorie</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>Orgán veřejné moci nebo kategorie</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Orgán veřejné moci nebo kategorie</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchie</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiluje
+                třídu
+                
+                <a href="#orgán-veřejné-moci-nebo-kategorie">Orgán veřejné moci nebo kategorie</a> (<a href="https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie">https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie</a>)
+                  <br />Definice: <i>Orgán veřejné moci nebo kategorie</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+              <p>Zpětné asociace</p>
+              <ul>
+                  <li>z domény <a href="#poskytování-úkonu"></a> → <a href="#má-poskytovatele"></a></li>
+                  <li>z domény <a href="#šablona-práva--povinnosti-nebo-právní-skutečnosti"></a> → <a href="#správnost-ppp-má-ověřovat"></a></li>
+                  <li>z domény <a href="#šablona-práva--povinnosti-nebo-právní-skutečnosti"></a> → <a href="#správnost-ppp-má-ověřovat"></a></li>
+                  <li>z domény <a href="#šablona-práva--povinnosti-nebo-právní-skutečnosti"></a> → <a href="#správnost-ppp-má-ověřovat"></a></li>
+              </ul>
+          
+          
+          </section>          <section id="poskytování-úkonu">
+            <h4>Poskytování úkonu</h4>
+          
+            <table class="def">
+              <tr>
+                <td>IRI profilovaných tříd</td>
+                <td>
+                    
+                    <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonu">https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonu</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="poskytování-úkonu">poskytování-úkonu</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>Poskytování úkonu</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Konkrétní poskytování úkonu definované jako dvojice poskytovat úkonu a příslušná činnost agendy, v rámci které je úkon poskytovatelem poskytován.</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchie</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiluje
+                třídu
+                
+                <a href="#poskytování-úkonu">Poskytování úkonu</a> (<a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonu">https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonu</a>)
+                  <br />Definice: <i>Konkrétní poskytování úkonu definované jako dvojice poskytovat úkonu a příslušná činnost agendy, v rámci které je úkon poskytovatelem poskytován.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+          
+              <section id="má-poskytovatele">
+                <h4>Má poskytovatele</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-poskytovatele">https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-poskytovatele</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="má-poskytovatele">má-poskytovatele</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>Má poskytovatele</td>
+                  </tr>
+                  <tr>
+                    <td>Definice</td>
+                    <td>Určuje poskytovatele úkonu, kterým je vždy orgán veřejné moci nebo jejich kategorie. Jeden úkon může mít více poskytovatelů. Jeden poskytovatel může poskytovat více úkonů.</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#poskytování-úkonu">Poskytování úkonu</a>
+              
+                          [0..*]
+              
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="#orgán-veřejné-moci-nebo-kategorie">Orgán veřejné moci nebo kategorie</a>
+              
+                          [0..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    vlastnost
+                    
+                    <a href="#má-poskytovatele">Má poskytovatele</a> (<a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-poskytovatele">https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-poskytovatele</a>)
+                      <br />Definice: <i>Určuje poskytovatele úkonu, kterým je vždy orgán veřejné moci nebo jejich kategorie. Jeden úkon může mít více poskytovatelů. Jeden poskytovatel může poskytovat více úkonů.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                </table>
+              </section>
+          </section>          <section id="šablona-práva--povinnosti-nebo-právní-skutečnosti">
+            <h4>Šablona práva, povinnosti nebo právní skutečnosti</h4>
+          
+            <table class="def">
+              <tr>
+                <td>IRI profilovaných tříd</td>
+                <td>
+                    
+                    <a href="https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti">https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="šablona-práva--povinnosti-nebo-právní-skutečnosti">šablona-práva--povinnosti-nebo-právní-skutečnosti</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>Šablona práva, povinnosti nebo právní skutečnosti</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Seznam práv, povinností a právních skutečností (PPP), které lze na základě § 8 zákona č. 12/2020 Sb. zapsat do RPP. Šablona představuje číselník PPP, u kterých je prostřednictvím Portálu občana zápis do RPP umožněn.</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchie</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiluje
+                třídu
+                
+                <a href="#šablona-práva--povinnosti-nebo-právní-skutečnosti">Šablona práva, povinnosti nebo právní skutečnosti</a> (<a href="https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti">https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti</a>)
+                  <br />Definice: <i>Seznam práv, povinností a právních skutečností (PPP), které lze na základě § 8 zákona č. 12/2020 Sb. zapsat do RPP. Šablona představuje číselník PPP, u kterých je prostřednictvím Portálu občana zápis do RPP umožněn.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+          
+              <section id="kód-šablony-ppp">
+                <h4>kód šablony PPP</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/kód-šablony-ppp">https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/kód-šablony-ppp</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="kód-šablony-ppp">kód-šablony-ppp</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>kód šablony PPP</td>
+                  </tr>
+                  <tr>
+                    <td>Definice</td>
+                    <td>Kód šablony (typu) generovaný při vytvoření typu. Kód typu je ve formátu: prefix PPP a pořadové číslo (např. PPP-12).</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#šablona-práva--povinnosti-nebo-právní-skutečnosti">Šablona práva, povinnosti nebo právní skutečnosti</a>
+              
+                          [0..*]
+              
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+              
+                          [0..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    vlastnost
+                    
+                    <a href="#kód-šablony-ppp">kód šablony PPP</a> (<a href="https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/kód-šablony-ppp">https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/kód-šablony-ppp</a>)
+                      <br />Definice: <i>Kód šablony (typu) generovaný při vytvoření typu. Kód typu je ve formátu: prefix PPP a pořadové číslo (např. PPP-12).</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                </table>
+              </section>    <section id="název-šablony-ppp">
+                <h4>název šablony PPP</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/název-šablony-ppp">https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/název-šablony-ppp</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="název-šablony-ppp">název-šablony-ppp</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>název šablony PPP</td>
+                  </tr>
+                  <tr>
+                    <td>Definice</td>
+                    <td>Název šablony (typu) práva, povinnosti a právní skutečnosti.</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#šablona-práva--povinnosti-nebo-právní-skutečnosti">Šablona práva, povinnosti nebo právní skutečnosti</a>
+              
+                          [0..*]
+              
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+              
+                          [0..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    vlastnost
+                    
+                    <a href="#název-šablony-ppp">název šablony PPP</a> (<a href="https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/název-šablony-ppp">https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/název-šablony-ppp</a>)
+                      <br />Definice: <i>Název šablony (typu) práva, povinnosti a právní skutečnosti.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                </table>
+              </section>    <section id="platnost-šablony-ppp-od">
+                <h4>platnost šablony PPP od</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/platnost-šablony-ppp-od">https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/platnost-šablony-ppp-od</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="platnost-šablony-ppp-od">platnost-šablony-ppp-od</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>platnost šablony PPP od</td>
+                  </tr>
+                  <tr>
+                    <td>Definice</td>
+                    <td>Datum, od kdy šablona (typ) platí.</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#šablona-práva--povinnosti-nebo-právní-skutečnosti">Šablona práva, povinnosti nebo právní skutečnosti</a>
+              
+                          [0..*]
+              
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+              
+                          [0..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    vlastnost
+                    
+                    <a href="#platnost-šablony-ppp-od">platnost šablony PPP od</a> (<a href="https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/platnost-šablony-ppp-od">https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/platnost-šablony-ppp-od</a>)
+                      <br />Definice: <i>Datum, od kdy šablona (typ) platí.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                </table>
+              </section>    <section id="ppp-vzniká-na-základě-služby">
+                <h4>PPP vzniká na základě služby</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/ppp-vzniká-na-základě-služby">https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/ppp-vzniká-na-základě-služby</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="ppp-vzniká-na-základě-služby">ppp-vzniká-na-základě-služby</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>PPP vzniká na základě služby</td>
+                  </tr>
+                  <tr>
+                    <td>Definice</td>
+                    <td>Uživatel služby má právo na zápis práva, povinnosti nebo právní skutečnosti, která se jej týká a vyplývá z úkonu orgánu veřejné moci uvedeného v katalogu služeb, do registru práv a povinností, nejsou-li právo, povinnost nebo právní skutečnost zapsány v základním registru nebo agendovém informačním systému.</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#šablona-práva--povinnosti-nebo-právní-skutečnosti">Šablona práva, povinnosti nebo právní skutečnosti</a>
+              
+                          [0..*]
+              
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="#služba-veřejné-správy">Služba veřejné správy</a>
+              
+                          [0..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    vlastnost
+                    
+                    <a href="#ppp-vzniká-na-základě-služby">PPP vzniká na základě služby</a> (<a href="https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/ppp-vzniká-na-základě-služby">https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/ppp-vzniká-na-základě-služby</a>)
+                      <br />Definice: <i>Uživatel služby má právo na zápis práva, povinnosti nebo právní skutečnosti, která se jej týká a vyplývá z úkonu orgánu veřejné moci uvedeného v katalogu služeb, do registru práv a povinností, nejsou-li právo, povinnost nebo právní skutečnost zapsány v základním registru nebo agendovém informačním systému.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                </table>
+              </section>    <section id="správnost-ppp-má-ověřovat">
+                <h4>správnost PPP má ověřovat</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat">https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="správnost-ppp-má-ověřovat">správnost-ppp-má-ověřovat</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>správnost PPP má ověřovat</td>
+                  </tr>
+                  <tr>
+                    <td>Definice</td>
+                    <td>Právo na zápis práva, povinnosti nebo právní skutečnosti uplatní uživatel služby prostřednictvím Agentury u příslušného orgánu veřejné moci, který učinil podkladový úkon. Příslušný orgán veřejné moci osvědčí existenci práva, povinnosti nebo právní skutečnosti a potvrdí ji Agentuře, která ji zapíše do registru práv a povinností.</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#šablona-práva--povinnosti-nebo-právní-skutečnosti">Šablona práva, povinnosti nebo právní skutečnosti</a>
+              
+                          [0..*]
+              
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="#orgán-veřejné-moci-nebo-kategorie">Orgán veřejné moci nebo kategorie</a>
+              
+                          [0..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    vlastnost
+                    
+                    <a href="#správnost-ppp-má-ověřovat">správnost PPP má ověřovat</a> (<a href="https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat">https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat</a>)
+                      <br />Definice: <i>Právo na zápis práva, povinnosti nebo právní skutečnosti uplatní uživatel služby prostřednictvím Agentury u příslušného orgánu veřejné moci, který učinil podkladový úkon. Příslušný orgán veřejné moci osvědčí existenci práva, povinnosti nebo právní skutečnosti a potvrdí ji Agentuře, která ji zapíše do registru práv a povinností.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                </table>
+              </section>    <section id="správnost-ppp-má-ověřovat">
+                <h4>správnost PPP má ověřovat</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat">https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="správnost-ppp-má-ověřovat">správnost-ppp-má-ověřovat</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>správnost PPP má ověřovat</td>
+                  </tr>
+                  <tr>
+                    <td>Definice</td>
+                    <td>Právo na zápis práva, povinnosti nebo právní skutečnosti uplatní uživatel služby prostřednictvím Agentury u příslušného orgánu veřejné moci, který učinil podkladový úkon. Příslušný orgán veřejné moci osvědčí existenci práva, povinnosti nebo právní skutečnosti a potvrdí ji Agentuře, která ji zapíše do registru práv a povinností.</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#šablona-práva--povinnosti-nebo-právní-skutečnosti">Šablona práva, povinnosti nebo právní skutečnosti</a>
+              
+                          [0..*]
+              
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="#orgán-veřejné-moci-nebo-kategorie">Orgán veřejné moci nebo kategorie</a>
+              
+                          [0..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    vlastnost
+                    
+                    <a href="#správnost-ppp-má-ověřovat">správnost PPP má ověřovat</a> (<a href="https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat">https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat</a>)
+                      <br />Definice: <i>Právo na zápis práva, povinnosti nebo právní skutečnosti uplatní uživatel služby prostřednictvím Agentury u příslušného orgánu veřejné moci, který učinil podkladový úkon. Příslušný orgán veřejné moci osvědčí existenci práva, povinnosti nebo právní skutečnosti a potvrdí ji Agentuře, která ji zapíše do registru práv a povinností.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                </table>
+              </section>    <section id="správnost-ppp-má-ověřovat">
+                <h4>správnost PPP má ověřovat</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat">https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="správnost-ppp-má-ověřovat">správnost-ppp-má-ověřovat</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>správnost PPP má ověřovat</td>
+                  </tr>
+                  <tr>
+                    <td>Definice</td>
+                    <td>Právo na zápis práva, povinnosti nebo právní skutečnosti uplatní uživatel služby prostřednictvím Agentury u příslušného orgánu veřejné moci, který učinil podkladový úkon. Příslušný orgán veřejné moci osvědčí existenci práva, povinnosti nebo právní skutečnosti a potvrdí ji Agentuře, která ji zapíše do registru práv a povinností.</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#šablona-práva--povinnosti-nebo-právní-skutečnosti">Šablona práva, povinnosti nebo právní skutečnosti</a>
+              
+                          [0..*]
+              
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="#orgán-veřejné-moci-nebo-kategorie">Orgán veřejné moci nebo kategorie</a>
+              
+                          [0..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    vlastnost
+                    
+                    <a href="#správnost-ppp-má-ověřovat">správnost PPP má ověřovat</a> (<a href="https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat">https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat</a>)
+                      <br />Definice: <i>Právo na zápis práva, povinnosti nebo právní skutečnosti uplatní uživatel služby prostřednictvím Agentury u příslušného orgánu veřejné moci, který učinil podkladový úkon. Příslušný orgán veřejné moci osvědčí existenci práva, povinnosti nebo právní skutečnosti a potvrdí ji Agentuře, která ji zapíše do registru práv a povinností.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                </table>
+              </section>
+          </section>          <section id="služba-veřejné-správy">
+            <h4>Služba veřejné správy</h4>
+          
+            <table class="def">
+              <tr>
+                <td>IRI profilovaných tříd</td>
+                <td>
+                    
+                    <a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy">https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="služba-veřejné-správy">služba-veřejné-správy</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>Služba veřejné správy</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Služba veřejné správy představuje funkci (činnost) úřadu, která je vědomě poskytnuta konkrétním OVM konkrétnímu příjemci služby podle příslušného právního předpisu tak, že přináší příjemci vnímanou hodnotu, ať už v podobě benefitu nebo splnění zákonné povinnosti. Evidují se pouze takové služby VS, během nichž dochází k interakci mezi OVM a klientem či naopak, nikoli k interakci mezi OVM a OVM. Na službu VS lze také pohlížet jako na dosažení práva či naplnění povinnosti klienta, které nelze splnit jinak než interakcí či sérií interakcí mezi klientem a OVM. Služba se dělí podle toho, zdali je iniciována klientem nebo vykonávaná z moci úřední. Každá služba se skládá z nejméně jednoho úkonu.</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchie</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiluje
+                třídu
+                
+                <a href="#služba-veřejné-správy">Služba veřejné správy</a> (<a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy">https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy</a>)
+                  <br />Definice: <i>Služba veřejné správy představuje funkci (činnost) úřadu, která je vědomě poskytnuta konkrétním OVM konkrétnímu příjemci služby podle příslušného právního předpisu tak, že přináší příjemci vnímanou hodnotu, ať už v podobě benefitu nebo splnění zákonné povinnosti. Evidují se pouze takové služby VS, během nichž dochází k interakci mezi OVM a klientem či naopak, nikoli k interakci mezi OVM a OVM. Na službu VS lze také pohlížet jako na dosažení práva či naplnění povinnosti klienta, které nelze splnit jinak než interakcí či sérií interakcí mezi klientem a OVM. Služba se dělí podle toho, zdali je iniciována klientem nebo vykonávaná z moci úřední. Každá služba se skládá z nejméně jednoho úkonu.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+              <p>Zpětné asociace</p>
+              <ul>
+                  <li>z domény <a href="#šablona-práva--povinnosti-nebo-právní-skutečnosti"></a> → <a href="#ppp-vzniká-na-základě-služby"></a></li>
+              </ul>
+          
+              <section id="je-poskytována-v-rámci-agendy">
+                <h4>Je poskytována v rámci agendy</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="https://slovník.gov.cz/agendový/104/pojem/je-poskytována-v-rámci-agendy">https://slovník.gov.cz/agendový/104/pojem/je-poskytována-v-rámci-agendy</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="je-poskytována-v-rámci-agendy">je-poskytována-v-rámci-agendy</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>Je poskytována v rámci agendy</td>
+                  </tr>
+                  <tr>
+                    <td>Definice</td>
+                    <td>Přiřazuje úkon do agendy, v rámci které je vykonáván. Úkon je vždy vykonáván v právě jedné agendě. V jedné agendě může být vykonáváno více úkonů.</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#služba-veřejné-správy">Služba veřejné správy</a>
+              
+                          [0..*]
+              
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="#agenda">Agenda</a>
+              
+                          [0..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    vlastnost
+                    
+                    <a href="#je-poskytována-v-rámci-agendy">Je poskytována v rámci agendy</a> (<a href="https://slovník.gov.cz/agendový/104/pojem/je-poskytována-v-rámci-agendy">https://slovník.gov.cz/agendový/104/pojem/je-poskytována-v-rámci-agendy</a>)
+                      <br />Definice: <i>Přiřazuje úkon do agendy, v rámci které je vykonáván. Úkon je vždy vykonáván v právě jedné agendě. V jedné agendě může být vykonáváno více úkonů.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                </table>
+              </section>    <section id="má-identifikátor-služby">
+                <h4>Má identifikátor služby</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby">https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="má-identifikátor-služby">má-identifikátor-služby</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>Má identifikátor služby</td>
+                  </tr>
+                  <tr>
+                    <td>Definice</td>
+                    <td>Automaticky (stejně jako v případě agendy nebo činnosti) generovaný kód sloužící pro databázové zpracování údajů.</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#služba-veřejné-správy">Služba veřejné správy</a>
+              
+                          [0..*]
+              
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+              
+                          [0..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    vlastnost
+                    
+                    <a href="#má-identifikátor-služby">Má identifikátor služby</a> (<a href="https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby">https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby</a>)
+                      <br />Definice: <i>Automaticky (stejně jako v případě agendy nebo činnosti) generovaný kód sloužící pro databázové zpracování údajů.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                </table>
+              </section>    <section id="má-název-služby">
+                <h4>Má název služby</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>IRI profilovaných vztahů</td>
+                    <td>
+                        
+                        <a href="https://slovník.gov.cz/agendový/104/pojem/má-název-služby">https://slovník.gov.cz/agendový/104/pojem/má-název-služby</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="má-název-služby">má-název-služby</a></td>
+                  </tr>
+                  <tr>
+                    <td>Název</td>
+                    <td>Má název služby</td>
+                  </tr>
+                  <tr>
+                    <td>Definice</td>
+                    <td>Název by měl klientovi stručně a jasně vystihnout, o jakou službu se jedná. Důležité je, aby byl nezaměnitelný s jinou službou, ale stále velmi jednoduchý, srozumitelný a zapamatovatelný. Měřítkem je, že název služby je používaný (bude používán) v běžném hovoru lidí.</td>
+                  </tr>
+                  <tr>
+                    <td>Definiční obor</td>
+                    <td>
+                      <a href="#služba-veřejné-správy">Služba veřejné správy</a>
+              
+                          [0..*]
+              
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Obor hodnot</td>
+                    <td>
+                      <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+              
+                          [0..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchie</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiluje
+                    vlastnost
+                    
+                    <a href="#má-název-služby">Má název služby</a> (<a href="https://slovník.gov.cz/agendový/104/pojem/má-název-služby">https://slovník.gov.cz/agendový/104/pojem/má-název-služby</a>)
+                      <br />Definice: <i>Název by měl klientovi stručně a jasně vystihnout, o jakou službu se jedná. Důležité je, aby byl nezaměnitelný s jinou službou, ale stále velmi jednoduchý, srozumitelný a zapamatovatelný. Měřítkem je, že název služby je používaný (bude používán) v běžném hovoru lidí.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                </table>
+              </section>
+          </section>          <section id="subjekt-práva">
+            <h4>Subjekt práva</h4>
+          
+            <table class="def">
+              <tr>
+                <td>IRI profilovaných tříd</td>
+                <td>
+                    
+                    <a href="https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-práva">https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-práva</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="subjekt-práva">subjekt-práva</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>Subjekt práva</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Subjekt práva je osoba,  která se účastní právních vztahů.</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchie</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiluje
+                třídu
+                
+                <a href="#subjekt-práva">Subjekt práva</a> (<a href="https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-práva">https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-práva</a>)
+                  <br />Definice: <i>Subjekt práva je osoba,  která se účastní právních vztahů.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+          
+          
+          </section>      </section>
+
+      <section>
+        <h2>Třídy</h2>
+
+            <section id="agenda">
+              <h4>Agenda</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda">https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Agenda</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Ucelená oblast působnosti orgánu veřejné moci nebo ucelená oblast působení soukromoprávního uživatele údajů.</td>
+                </tr>
+              </table>
+            </section>            <section id="orgán-veřejné-moci">
+              <h4>Orgán veřejné moci</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci">https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Orgán veřejné moci</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Orgánem veřejné moci se rozumí státní orgán, územní samosprávný celek a fyzická nebo právnická osoba, byla-li jí svěřena působnost v oblasti veřejné správy.</td>
+                </tr>
+                <tr>
+                  <td>Rodičovské třídy</td>
+                  <td><a href="#orgán-veřejné-moci-nebo-kategorie">Orgán veřejné moci nebo kategorie</a>, <a href="#orgán-veřejné-moci">Orgán veřejné moci</a></td>
+                </tr>
+              </table>
+            </section>            <section id="orgán-veřejné-moci">
+              <h4>Orgán veřejné moci</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://slovník.gov.cz/veřejný-sektor/pojem/orgán-veřejné-moci">https://slovník.gov.cz/veřejný-sektor/pojem/orgán-veřejné-moci</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Orgán veřejné moci</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Orgán veřejné moci  je organizace, která reprezentuje veřejnou moc a je ze zákona oprávněna autoritativně rozhodovat o právech a povinnostech osob.</td>
+                </tr>
+                <tr>
+                  <td>Rodičovské třídy</td>
+                  <td><a href="#organizace">Organizace</a></td>
+                </tr>
+                <tr>
+                  <td>Podtřídy z tohoto slovníku</td>
+                  <td><a href="#orgán-veřejné-moci">Orgán veřejné moci</a></td>
+                </tr>
+              </table>
+            </section>            <section id="orgán-veřejné-moci-nebo-kategorie">
+              <h4>Orgán veřejné moci nebo kategorie</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie">https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Orgán veřejné moci nebo kategorie</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Orgán veřejné moci nebo kategorie</td>
+                </tr>
+                <tr>
+                  <td>Podtřídy z tohoto slovníku</td>
+                  <td><a href="#orgán-veřejné-moci">Orgán veřejné moci</a></td>
+                </tr>
+              </table>
+            </section>            <section id="organizace">
+              <h4>Organizace</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://slovník.gov.cz/veřejný-sektor/pojem/organizace">https://slovník.gov.cz/veřejný-sektor/pojem/organizace</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Organizace</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Organizace je uskupení lidí, které je agentem.</td>
+                </tr>
+                <tr>
+                  <td>Rodičovské třídy</td>
+                  <td><a href="#právnická-osoba">Právnická osoba</a></td>
+                </tr>
+                <tr>
+                  <td>Podtřídy z tohoto slovníku</td>
+                  <td><a href="#orgán-veřejné-moci">Orgán veřejné moci</a></td>
+                </tr>
+              </table>
+            </section>            <section id="poskytování-úkonu">
+              <h4>Poskytování úkonu</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonu">https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonu</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Poskytování úkonu</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Konkrétní poskytování úkonu definované jako dvojice poskytovat úkonu a příslušná činnost agendy, v rámci které je úkon poskytovatelem poskytován.</td>
+                </tr>
+              </table>
+            </section>            <section id="právnická-osoba">
+              <h4>Právnická osoba</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://slovník.gov.cz/veřejný-sektor/pojem/právnická-osoba">https://slovník.gov.cz/veřejný-sektor/pojem/právnická-osoba</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Právnická osoba</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Právnická osoba je organizací, která je subjektem práva.</td>
+                </tr>
+                <tr>
+                  <td>Rodičovské třídy</td>
+                  <td><a href="#subjekt-práva">Subjekt práva</a></td>
+                </tr>
+                <tr>
+                  <td>Podtřídy z tohoto slovníku</td>
+                  <td><a href="#organizace">Organizace</a></td>
+                </tr>
+              </table>
+            </section>            <section id="šablona-práva--povinnosti-nebo-právní-skutečnosti">
+              <h4>Šablona práva, povinnosti nebo právní skutečnosti</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti">https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Šablona práva, povinnosti nebo právní skutečnosti</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Seznam práv, povinností a právních skutečností (PPP), které lze na základě § 8 zákona č. 12/2020 Sb. zapsat do RPP. Šablona představuje číselník PPP, u kterých je prostřednictvím Portálu občana zápis do RPP umožněn.</td>
+                </tr>
+              </table>
+            </section>            <section id="služba-veřejné-správy">
+              <h4>Služba veřejné správy</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy">https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Služba veřejné správy</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Služba veřejné správy představuje funkci (činnost) úřadu, která je vědomě poskytnuta konkrétním OVM konkrétnímu příjemci služby podle příslušného právního předpisu tak, že přináší příjemci vnímanou hodnotu, ať už v podobě benefitu nebo splnění zákonné povinnosti. Evidují se pouze takové služby VS, během nichž dochází k interakci mezi OVM a klientem či naopak, nikoli k interakci mezi OVM a OVM. Na službu VS lze také pohlížet jako na dosažení práva či naplnění povinnosti klienta, které nelze splnit jinak než interakcí či sérií interakcí mezi klientem a OVM. Služba se dělí podle toho, zdali je iniciována klientem nebo vykonávaná z moci úřední. Každá služba se skládá z nejméně jednoho úkonu.</td>
+                </tr>
+              </table>
+            </section>            <section id="subjekt-práva">
+              <h4>Subjekt práva</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-práva">https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-práva</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Subjekt práva</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Subjekt práva je osoba,  která se účastní právních vztahů.</td>
+                </tr>
+                <tr>
+                  <td>Podtřídy z tohoto slovníku</td>
+                  <td><a href="#právnická-osoba">Právnická osoba</a></td>
+                </tr>
+              </table>
+            </section>      </section>
+
+      <section>
+        <h2>Vlastnosti</h2>
+            <section id="je-poskytována-v-rámci-agendy">
+              <h4>Je poskytována v rámci agendy</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://slovník.gov.cz/agendový/104/pojem/je-poskytována-v-rámci-agendy">https://slovník.gov.cz/agendový/104/pojem/je-poskytována-v-rámci-agendy</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Je poskytována v rámci agendy</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Přiřazuje úkon do agendy, v rámci které je vykonáván. Úkon je vždy vykonáván v právě jedné agendě. V jedné agendě může být vykonáváno více úkonů.</td>
+                </tr>
+                <tr>
+                  <td>Definiční obor</td>
+                  <td>
+                    <a href="#služba-veřejné-správy">Služba veřejné správy</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Obor hodnot</td>
+                  <td>
+                    <a href="#agenda">Agenda</a>
+            
+                        [0..*]
+            
+                  </td>
+                  </tr>
+              </table>
+            </section>            <section id="kód-šablony-ppp">
+              <h4>kód šablony PPP</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/kód-šablony-ppp">https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/kód-šablony-ppp</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>kód šablony PPP</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Kód šablony (typu) generovaný při vytvoření typu. Kód typu je ve formátu: prefix PPP a pořadové číslo (např. PPP-12).</td>
+                </tr>
+                <tr>
+                  <td>Definiční obor</td>
+                  <td>
+                    <a href="#šablona-práva--povinnosti-nebo-právní-skutečnosti">Šablona práva, povinnosti nebo právní skutečnosti</a>
+            
+                        [0..*]
+            
+                  </td>
+                </tr>
+                <tr>
+                  <td>Obor hodnot</td>
+                  <td>
+                    <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+            
+                        [0..*]
+            
+                  </td>
+                  </tr>
+              </table>
+            </section>            <section id="má-identifikátor-služby">
+              <h4>Má identifikátor služby</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby">https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Má identifikátor služby</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Automaticky (stejně jako v případě agendy nebo činnosti) generovaný kód sloužící pro databázové zpracování údajů.</td>
+                </tr>
+                <tr>
+                  <td>Definiční obor</td>
+                  <td>
+                    <a href="#služba-veřejné-správy">Služba veřejné správy</a>
+            
+                        [0..*]
+            
+                  </td>
+                </tr>
+                <tr>
+                  <td>Obor hodnot</td>
+                  <td>
+                    <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+            
+                        [0..*]
+            
+                  </td>
+                  </tr>
+              </table>
+            </section>            <section id="má-kód-agendy">
+              <h4>Má kód agendy</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy">https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Má kód agendy</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Kód agendy je veřejným identifikátorem, který je jednoznačně přiřazen záznamu o agendě v číselníku agend v registru práv a povinností.</td>
+                </tr>
+                <tr>
+                  <td>Definiční obor</td>
+                  <td>
+                    <a href="#agenda">Agenda</a>
+            
+                        [0..*]
+            
+                  </td>
+                </tr>
+                <tr>
+                  <td>Obor hodnot</td>
+                  <td>
+                    <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+            
+                        [0..*]
+            
+                  </td>
+                  </tr>
+              </table>
+            </section>            <section id="má-název-služby">
+              <h4>Má název služby</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://slovník.gov.cz/agendový/104/pojem/má-název-služby">https://slovník.gov.cz/agendový/104/pojem/má-název-služby</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Má název služby</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Název by měl klientovi stručně a jasně vystihnout, o jakou službu se jedná. Důležité je, aby byl nezaměnitelný s jinou službou, ale stále velmi jednoduchý, srozumitelný a zapamatovatelný. Měřítkem je, že název služby je používaný (bude používán) v běžném hovoru lidí.</td>
+                </tr>
+                <tr>
+                  <td>Definiční obor</td>
+                  <td>
+                    <a href="#služba-veřejné-správy">Služba veřejné správy</a>
+            
+                        [0..*]
+            
+                  </td>
+                </tr>
+                <tr>
+                  <td>Obor hodnot</td>
+                  <td>
+                    <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+            
+                        [0..*]
+            
+                  </td>
+                  </tr>
+              </table>
+            </section>            <section id="má-poskytovatele">
+              <h4>Má poskytovatele</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-poskytovatele">https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-poskytovatele</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Má poskytovatele</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Určuje poskytovatele úkonu, kterým je vždy orgán veřejné moci nebo jejich kategorie. Jeden úkon může mít více poskytovatelů. Jeden poskytovatel může poskytovat více úkonů.</td>
+                </tr>
+                <tr>
+                  <td>Definiční obor</td>
+                  <td>
+                    <a href="#poskytování-úkonu">Poskytování úkonu</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Obor hodnot</td>
+                  <td>
+                    <a href="#orgán-veřejné-moci-nebo-kategorie">Orgán veřejné moci nebo kategorie</a>
+            
+                        [0..*]
+            
+                  </td>
+                  </tr>
+              </table>
+            </section>            <section id="název-šablony-ppp">
+              <h4>název šablony PPP</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/název-šablony-ppp">https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/název-šablony-ppp</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>název šablony PPP</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Název šablony (typu) práva, povinnosti a právní skutečnosti.</td>
+                </tr>
+                <tr>
+                  <td>Definiční obor</td>
+                  <td>
+                    <a href="#šablona-práva--povinnosti-nebo-právní-skutečnosti">Šablona práva, povinnosti nebo právní skutečnosti</a>
+            
+                        [0..*]
+            
+                  </td>
+                </tr>
+                <tr>
+                  <td>Obor hodnot</td>
+                  <td>
+                    <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+            
+                        [0..*]
+            
+                  </td>
+                  </tr>
+              </table>
+            </section>            <section id="platnost-šablony-ppp-od">
+              <h4>platnost šablony PPP od</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/platnost-šablony-ppp-od">https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/platnost-šablony-ppp-od</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>platnost šablony PPP od</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Datum, od kdy šablona (typ) platí.</td>
+                </tr>
+                <tr>
+                  <td>Definiční obor</td>
+                  <td>
+                    <a href="#šablona-práva--povinnosti-nebo-právní-skutečnosti">Šablona práva, povinnosti nebo právní skutečnosti</a>
+            
+                        [0..*]
+            
+                  </td>
+                </tr>
+                <tr>
+                  <td>Obor hodnot</td>
+                  <td>
+                    <a href="http://www.w3.org/2000/01/rdf-schema#Literal">rdfs:Literal</a>
+            
+                        [0..*]
+            
+                  </td>
+                  </tr>
+              </table>
+            </section>            <section id="ppp-vzniká-na-základě-služby">
+              <h4>PPP vzniká na základě služby</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/ppp-vzniká-na-základě-služby">https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/ppp-vzniká-na-základě-služby</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>PPP vzniká na základě služby</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Uživatel služby má právo na zápis práva, povinnosti nebo právní skutečnosti, která se jej týká a vyplývá z úkonu orgánu veřejné moci uvedeného v katalogu služeb, do registru práv a povinností, nejsou-li právo, povinnost nebo právní skutečnost zapsány v základním registru nebo agendovém informačním systému.</td>
+                </tr>
+                <tr>
+                  <td>Definiční obor</td>
+                  <td>
+                    <a href="#šablona-práva--povinnosti-nebo-právní-skutečnosti">Šablona práva, povinnosti nebo právní skutečnosti</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Obor hodnot</td>
+                  <td>
+                    <a href="#služba-veřejné-správy">Služba veřejné správy</a>
+            
+                        [0..*]
+            
+                  </td>
+                  </tr>
+              </table>
+            </section>            <section id="správnost-ppp-má-ověřovat">
+              <h4>správnost PPP má ověřovat</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat">https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>správnost PPP má ověřovat</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Právo na zápis práva, povinnosti nebo právní skutečnosti uplatní uživatel služby prostřednictvím Agentury u příslušného orgánu veřejné moci, který učinil podkladový úkon. Příslušný orgán veřejné moci osvědčí existenci práva, povinnosti nebo právní skutečnosti a potvrdí ji Agentuře, která ji zapíše do registru práv a povinností.</td>
+                </tr>
+                <tr>
+                  <td>Definiční obor</td>
+                  <td>
+                    <a href="#šablona-práva--povinnosti-nebo-právní-skutečnosti">Šablona práva, povinnosti nebo právní skutečnosti</a>
+            
+                    
+                  </td>
+                </tr>
+                <tr>
+                  <td>Obor hodnot</td>
+                  <td>
+                    <a href="#orgán-veřejné-moci-nebo-kategorie">Orgán veřejné moci nebo kategorie</a>
+            
+                        [0..*]
+            
+                  </td>
+                  </tr>
+              </table>
+            </section>      </section>
+
+      <section>
+      <h2>
+        Specifikace struktury pro
+        Šablona práva, povinnosti nebo právní skutečnosti
+      </h2>
+      <p>Datová struktura pro Šablona práva, povinnosti nebo právní skutečnosti. Seznam práv, povinností a právních skutečností (PPP), které lze na základě § 8 zákona č. 12/2020 Sb. zapsat do RPP. Šablona představuje číselník PPP, u kterých je prostřednictvím Portálu občana zápis do RPP umožněn.</p>
+
+      <section id="json-schema--šablona-práva,-povinnosti-nebo-právní-skutečnosti">
+
+
+
+
+
+
+
+
+
+
+
+
+  <h1>
+      JSON struktura pro    Šablona práva, povinnosti nebo právní skutečnosti
+  </h1>
+
+    <dl>
+      <dt>IRI</dt>
+      <dd><code>/schema.json</code></dd>
+      <dt>Definováno v</dt>
+      <dd><code><a href="../schema.json">../schema.json</a></code></dd>
+        <dt>Verze použitého jazyka</dt>
+        <dd><a href="https://json-schema.org/specification-links.html#2020-12-release" target="_blank">2020-12</a> (metaschema IRI: <code>https://json-schema.org/draft/2020-12/schema</code>)</dd>
+    </dl>
+
+    <h2>Kořen</h2>
+    Kořenem JSON schématu je
+            <strong>
+    objekt
+  </strong>
+    s vlastnostmi (<code>properties</code>):
+    <ul>
+        <li style="list-style-type: disclosure-closed;">
+          <code>položky</code>:
+          povinná
+          položka typu
+
+                
+  
+      pole hodnot <code>{0..*}</code> typu     <a href="#json-object--šablona-práva,-povinnosti-nebo-právní-skutečnosti--šablona-práva,-povinnosti-nebo-právní-skutečnosti"></a>
+
+          
+  
+  
+  
+  
+  
+  
+  
+
+
+        </li>
+    </ul>
+  
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+    <section id="json-object--šablona-práva,-povinnosti-nebo-právní-skutečnosti--šablona-práva,-povinnosti-nebo-právní-skutečnosti">
+      <h2>
+        Objekt <i>Šablona práva, povinnosti nebo právní skutečnosti</i>
+      </h2>
+
+      <table class="def">
+          <tr>
+            <th>Popis</th>
+            <td>Seznam práv, povinností a právních skutečností (PPP), které lze na základě § 8 zákona č. 12/2020 Sb. zapsat do RPP. Šablona představuje číselník PPP, u kterých je prostřednictvím Portálu občana zápis do RPP umožněn.</td>
+          </tr>
+
+          <tr>
+            <th>Interpretace</th>
+            <td><a href="#šablona-práva--povinnosti-nebo-právní-skutečnosti">Šablona práva, povinnosti nebo právní skutečnosti</a></td>
+          </tr>
+      </table>
+
+          <strong>
+    objekt
+  </strong>
+    s vlastnostmi (<code>properties</code>):
+    <ul>
+        <li style="list-style-type: disclosure-closed;">
+          <code>id</code>:
+          povinná
+          položka typu
+
+                
+  
+  
+    řetězec
+  (formát: <code>iri</code>)
+  
+
+
+  
+  
+  
+  
+  
+
+
+        </li>
+        <li style="list-style-type: disclosure-closed;">
+          <code>type</code>:
+          povinná
+          položka typu
+
+                
+  
+  
+  
+  
+  
+  
+  
+        právě jedno z následujících (<code>oneOf</code>):
+    <ul>
+        <li>      
+    konstantní hodnota
+    <code>&quot;Šablona práva, povinnosti nebo právní skutečnosti&quot;</code>
+
+  
+  
+  
+  
+  
+  
+  
+
+</li>
+        <li>      
+  
+      pole hodnot <code>{0..*}</code> typu       
+  
+  
+    řetězec
+  
+  
+
+
+  
+  
+  
+  
+  
+
+
+     a musí obsahovat: <code>&quot;Šablona práva, povinnosti nebo právní skutečnosti&quot;</code>
+  
+  
+  
+  
+  
+  
+  
+
+</li>
+    </ul>
+
+
+
+
+
+
+        </li>
+        <li style="list-style-type: disclosure-closed;">
+          <code>kód_šablony_ppp</code>:
+            (<a href="#kód-šablony-ppp" label="Kód šablony (typu) generovaný při vytvoření typu. Kód typu je ve formátu: prefix PPP a pořadové číslo (např. PPP-12).">kód šablony PPP</a>)
+          nepovinná
+          položka typu
+
+                
+  
+      pole hodnot <code>{0..*}</code> typu       
+  
+  
+    řetězec
+  
+  
+
+
+  
+  
+  
+  
+  
+
+
+          
+  
+  
+  
+  
+  
+  
+  
+
+
+        </li>
+        <li style="list-style-type: disclosure-closed;">
+          <code>název_šablony_ppp</code>:
+            (<a href="#název-šablony-ppp" label="Název šablony (typu) práva, povinnosti a právní skutečnosti.">název šablony PPP</a>)
+          nepovinná
+          položka typu
+
+                
+  
+      pole hodnot <code>{0..*}</code> typu       
+  
+  
+    řetězec
+  
+  
+
+
+  
+  
+  
+  
+  
+
+
+          
+  
+  
+  
+  
+  
+  
+  
+
+
+        </li>
+        <li style="list-style-type: disclosure-closed;">
+          <code>platnost_šablony_ppp_od</code>:
+            (<a href="#platnost-šablony-ppp-od" label="Datum, od kdy šablona (typ) platí.">platnost šablony PPP od</a>)
+          nepovinná
+          položka typu
+
+                
+  
+      pole hodnot <code>{0..*}</code> typu       
+  
+  
+    řetězec
+  
+  
+
+
+  
+  
+  
+  
+  
+
+
+          
+  
+  
+  
+  
+  
+  
+  
+
+
+        </li>
+        <li style="list-style-type: disclosure-closed;">
+          <code>ppp_vzniká_na_základě_služby</code>:
+            (<a href="#ppp-vzniká-na-základě-služby" label="Uživatel služby má právo na zápis práva, povinnosti nebo právní skutečnosti, která se jej týká a vyplývá z úkonu orgánu veřejné moci uvedeného v katalogu služeb, do registru práv a povinností, nejsou-li právo, povinnost nebo právní skutečnost zapsány v základním registru nebo agendovém informačním systému.">PPP vzniká na základě služby</a>)
+          nepovinná
+          položka typu
+
+                
+  
+      pole hodnot <code>{0..*}</code> typu     <a href="#json-object--šablona-práva,-povinnosti-nebo-právní-skutečnosti--služba-veřejné-správy"></a>
+
+          
+  
+  
+  
+  
+  
+  
+  
+
+
+        </li>
+        <li style="list-style-type: disclosure-closed;">
+          <code>správnost_ppp_má_ověřovat</code>:
+            (<a href="#správnost-ppp-má-ověřovat" label="Právo na zápis práva, povinnosti nebo právní skutečnosti uplatní uživatel služby prostřednictvím Agentury u příslušného orgánu veřejné moci, který učinil podkladový úkon. Příslušný orgán veřejné moci osvědčí existenci práva, povinnosti nebo právní skutečnosti a potvrdí ji Agentuře, která ji zapíše do registru práv a povinností.">správnost PPP má ověřovat</a>)
+          nepovinná
+          položka typu
+
+                
+  
+      pole hodnot <code>{0..*}</code> typu       
+  
+  
+    řetězec
+  (formát: <code>iri</code>)
+  
+
+
+  
+  
+  
+  
+  
+
+
+          
+  
+  
+  
+  
+  
+  
+  
+
+
+        </li>
+    </ul>
+  
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+    </section>
+    <section id="json-object--šablona-práva,-povinnosti-nebo-právní-skutečnosti--služba-veřejné-správy">
+      <h2>
+        Objekt <i>Služba veřejné správy</i>
+      </h2>
+
+      <table class="def">
+          <tr>
+            <th>Popis</th>
+            <td>Služba veřejné správy představuje funkci (činnost) úřadu, která je vědomě poskytnuta konkrétním OVM konkrétnímu příjemci služby podle příslušného právního předpisu tak, že přináší příjemci vnímanou hodnotu, ať už v podobě benefitu nebo splnění zákonné povinnosti. Evidují se pouze takové služby VS, během nichž dochází k interakci mezi OVM a klientem či naopak, nikoli k interakci mezi OVM a OVM. Na službu VS lze také pohlížet jako na dosažení práva či naplnění povinnosti klienta, které nelze splnit jinak než interakcí či sérií interakcí mezi klientem a OVM. Služba se dělí podle toho, zdali je iniciována klientem nebo vykonávaná z moci úřední. Každá služba se skládá z nejméně jednoho úkonu.</td>
+          </tr>
+
+          <tr>
+            <th>Interpretace</th>
+            <td><a href="#služba-veřejné-správy">Služba veřejné správy</a></td>
+          </tr>
+      </table>
+
+          <strong>
+    objekt
+  </strong>
+    s vlastnostmi (<code>properties</code>):
+    <ul>
+        <li style="list-style-type: disclosure-closed;">
+          <code>id</code>:
+          povinná
+          položka typu
+
+                
+  
+  
+    řetězec
+  (formát: <code>iri</code>)
+  
+
+
+  
+  
+  
+  
+  
+
+
+        </li>
+        <li style="list-style-type: disclosure-closed;">
+          <code>type</code>:
+          povinná
+          položka typu
+
+                
+  
+  
+  
+  
+  
+  
+  
+        právě jedno z následujících (<code>oneOf</code>):
+    <ul>
+        <li>      
+    konstantní hodnota
+    <code>&quot;Služba veřejné správy&quot;</code>
+
+  
+  
+  
+  
+  
+  
+  
+
+</li>
+        <li>      
+  
+      pole hodnot <code>{0..*}</code> typu       
+  
+  
+    řetězec
+  
+  
+
+
+  
+  
+  
+  
+  
+
+
+     a musí obsahovat: <code>&quot;Služba veřejné správy&quot;</code>
+  
+  
+  
+  
+  
+  
+  
+
+</li>
+    </ul>
+
+
+
+
+
+
+        </li>
+        <li style="list-style-type: disclosure-closed;">
+          <code>má_identifikátor_služby</code>:
+            (<a href="#má-identifikátor-služby" label="Automaticky (stejně jako v případě agendy nebo činnosti) generovaný kód sloužící pro databázové zpracování údajů.">Má identifikátor služby</a>)
+          nepovinná
+          položka typu
+
+                
+  
+      pole hodnot <code>{0..*}</code> typu       
+  
+  
+    řetězec
+  
+  
+
+
+  
+  
+  
+  
+  
+
+
+          
+  
+  
+  
+  
+  
+  
+  
+
+
+        </li>
+        <li style="list-style-type: disclosure-closed;">
+          <code>má_název_služby</code>:
+            (<a href="#má-název-služby" label="Název by měl klientovi stručně a jasně vystihnout, o jakou službu se jedná. Důležité je, aby byl nezaměnitelný s jinou službou, ale stále velmi jednoduchý, srozumitelný a zapamatovatelný. Měřítkem je, že název služby je používaný (bude používán) v běžném hovoru lidí.">Má název služby</a>)
+          nepovinná
+          položka typu
+
+                
+  
+      pole hodnot <code>{0..*}</code> typu       
+  
+  
+    řetězec
+  
+  
+
+
+  
+  
+  
+  
+  
+
+
+          
+  
+  
+  
+  
+  
+  
+  
+
+
+        </li>
+        <li style="list-style-type: disclosure-closed;">
+          <code>je_poskytována_v_rámci_agendy</code>:
+            (<a href="#je-poskytována-v-rámci-agendy" label="Přiřazuje úkon do agendy, v rámci které je vykonáván. Úkon je vždy vykonáván v právě jedné agendě. V jedné agendě může být vykonáváno více úkonů.">Je poskytována v rámci agendy</a>)
+          nepovinná
+          položka typu
+
+                
+  
+      pole hodnot <code>{0..*}</code> typu     <a href="#json-object--šablona-práva,-povinnosti-nebo-právní-skutečnosti--agenda"></a>
+
+          
+  
+  
+  
+  
+  
+  
+  
+
+
+        </li>
+    </ul>
+  
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+    </section>
+    <section id="json-object--šablona-práva,-povinnosti-nebo-právní-skutečnosti--agenda">
+      <h2>
+        Objekt <i>Agenda</i>
+      </h2>
+
+      <table class="def">
+          <tr>
+            <th>Popis</th>
+            <td>Ucelená oblast působnosti orgánu veřejné moci nebo ucelená oblast působení soukromoprávního uživatele údajů.</td>
+          </tr>
+
+          <tr>
+            <th>Interpretace</th>
+            <td><a href="#agenda">Agenda</a></td>
+          </tr>
+      </table>
+
+          <strong>
+    objekt
+  </strong>
+    s vlastnostmi (<code>properties</code>):
+    <ul>
+        <li style="list-style-type: disclosure-closed;">
+          <code>id</code>:
+          povinná
+          položka typu
+
+                
+  
+  
+    řetězec
+  (formát: <code>iri</code>)
+  
+
+
+  
+  
+  
+  
+  
+
+
+        </li>
+        <li style="list-style-type: disclosure-closed;">
+          <code>type</code>:
+          povinná
+          položka typu
+
+                
+  
+  
+  
+  
+  
+  
+  
+        právě jedno z následujících (<code>oneOf</code>):
+    <ul>
+        <li>      
+    konstantní hodnota
+    <code>&quot;Agenda&quot;</code>
+
+  
+  
+  
+  
+  
+  
+  
+
+</li>
+        <li>      
+  
+      pole hodnot <code>{0..*}</code> typu       
+  
+  
+    řetězec
+  
+  
+
+
+  
+  
+  
+  
+  
+
+
+     a musí obsahovat: <code>&quot;Agenda&quot;</code>
+  
+  
+  
+  
+  
+  
+  
+
+</li>
+    </ul>
+
+
+
+
+
+
+        </li>
+        <li style="list-style-type: disclosure-closed;">
+          <code>má_kód_agendy</code>:
+            (<a href="#má-kód-agendy" label="Kód agendy je veřejným identifikátorem, který je jednoznačně přiřazen záznamu o agendě v číselníku agend v registru práv a povinností.">Má kód agendy</a>)
+          nepovinná
+          položka typu
+
+                
+  
+      pole hodnot <code>{0..*}</code> typu       
+  
+  
+    řetězec
+  
+  
+
+
+  
+  
+  
+  
+  
+
+
+          
+  
+  
+  
+  
+  
+  
+  
+
+
+        </li>
+    </ul>
+  
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+
+    </section>
+</section>
+
+
+
+
+
+
+<section>
+<h3>Přehled XML struktury</h3>
+<p>
+  Tato sekce popisuje XSD zachycující strukturu pro <i>Šablona práva, povinnosti nebo právní skutečnosti</i>, jež je definováno v souboru <a href="../schema.xsd"><code>../schema.xsd</code></a>.
+</p>
+
+
+<section>
+<h4>Importy</h4>
+<p>
+  Seznam schémat, jež jsou tímto schématem importovány a použity.
+</p>
+  <i>Nic není importováno.</i>
+</section>
+
+<section>
+  <h4>Kořenové entity XSD schématu</h4>
+  <ul>
+      <li>element <a href="#element-šablona_práva,_povinnosti_nebo_právní_skutečnosti"><code>šablona_práva,_povinnosti_nebo_právní_skutečnosti</code></a></li>
+
+      <li> komplexní typ <a href="#type-šablona_práva,_povinnosti_nebo_právní_skutečnosti"><code>šablona_práva,_povinnosti_nebo_právní_skutečnosti</code></a></li>
+  </ul>
+</section>
+
+
+<section id="element-šablona_práva,_povinnosti_nebo_právní_skutečnosti">
+  <h4>Kořenový element <code>&lt;šablona_práva,_povinnosti_nebo_právní_skutečnosti&gt;</code></h4>
+  <dl>
+    
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="#type-šablona_práva,_povinnosti_nebo_právní_skutečnosti"><code>šablona_práva,_povinnosti_nebo_právní_skutečnosti</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+      </dl>
+</section>
+
+
+<section id="type-šablona_práva,_povinnosti_nebo_právní_skutečnosti">
+  <h4>Kořenový komplexní typ <code>šablona_práva,_povinnosti_nebo_právní_skutečnosti</code></h4>
+  <dl>
+        <dt>Význam</dt>
+      <dd>
+        <a href="#šablona-práva--povinnosti-nebo-právní-skutečnosti">Šablona práva, povinnosti nebo právní skutečnosti</a>
+        (Seznam práv, povinností a právních skutečností (PPP), které lze na základě § 8 zákona č. 12/2020 Sb. zapsat do RPP. Šablona představuje číselník PPP, u kterých je prostřednictvím Portálu občana zápis do RPP umožněn.)
+      </dd>
+
+
+        <dt>Obsah 
+ - elementy v tomto pořadí
+</dt>
+      <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-iri"><code>&lt;iri&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-kód_šablony_ppp"><code>&lt;kód_šablony_ppp&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-název_šablony_ppp"><code>&lt;název_šablony_ppp&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-platnost_šablony_ppp_od"><code>&lt;platnost_šablony_ppp_od&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-ppp_vzniká_na_základě_služby"><code>&lt;ppp_vzniká_na_základě_služby&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-správnost_ppp_má_ověřovat"><code>&lt;správnost_ppp_má_ověřovat&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-správnost_ppp_má_ověřovat"><code>&lt;správnost_ppp_má_ověřovat&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-správnost_ppp_má_ověřovat"><code>&lt;správnost_ppp_má_ověřovat&gt;</code></a> [0..*]
+      </li>
+  </ul>
+
+
+  </dl>
+</section>
+<section id="element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-iri">
+  <h4>Element <code>&lt;iri&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>1..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-šablona_práva,_povinnosti_nebo_právní_skutečnosti"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-kód_šablony_ppp">
+  <h4>Element <code>&lt;kód_šablony_ppp&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#kód-šablony-ppp"><strong>kód šablony PPP</strong></a>
+          (Kód šablony (typu) generovaný při vytvoření typu. Kód typu je ve formátu: prefix PPP a pořadové číslo (např. PPP-12).)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-šablona_práva,_povinnosti_nebo_právní_skutečnosti"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanySimpleType"><code>xs:anySimpleType</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-název_šablony_ppp">
+  <h4>Element <code>&lt;název_šablony_ppp&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#název-šablony-ppp"><strong>název šablony PPP</strong></a>
+          (Název šablony (typu) práva, povinnosti a právní skutečnosti.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-šablona_práva,_povinnosti_nebo_právní_skutečnosti"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanySimpleType"><code>xs:anySimpleType</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-platnost_šablony_ppp_od">
+  <h4>Element <code>&lt;platnost_šablony_ppp_od&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#platnost-šablony-ppp-od"><strong>platnost šablony PPP od</strong></a>
+          (Datum, od kdy šablona (typ) platí.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-šablona_práva,_povinnosti_nebo_právní_skutečnosti"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanySimpleType"><code>xs:anySimpleType</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-ppp_vzniká_na_základě_služby">
+  <h4>Element <code>&lt;ppp_vzniká_na_základě_služby&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#ppp-vzniká-na-základě-služby"><strong>PPP vzniká na základě služby</strong></a>
+          (Uživatel služby má právo na zápis práva, povinnosti nebo právní skutečnosti, která se jej týká a vyplývá z úkonu orgánu veřejné moci uvedeného v katalogu služeb, do registru práv a povinností, nejsou-li právo, povinnost nebo právní skutečnost zapsány v základním registru nebo agendovém informačním systému.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-šablona_práva,_povinnosti_nebo_právní_skutečnosti"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#služba-veřejné-správy">Služba veřejné správy</a>
+        (Služba veřejné správy představuje funkci (činnost) úřadu, která je vědomě poskytnuta konkrétním OVM konkrétnímu příjemci služby podle příslušného právního předpisu tak, že přináší příjemci vnímanou hodnotu, ať už v podobě benefitu nebo splnění zákonné povinnosti. Evidují se pouze takové služby VS, během nichž dochází k interakci mezi OVM a klientem či naopak, nikoli k interakci mezi OVM a OVM. Na službu VS lze také pohlížet jako na dosažení práva či naplnění povinnosti klienta, které nelze splnit jinak než interakcí či sérií interakcí mezi klientem a OVM. Služba se dělí podle toho, zdali je iniciována klientem nebo vykonávaná z moci úřední. Každá služba se skládá z nejméně jednoho úkonu.)
+      </dd>
+
+
+
+        <dt>Obsah 
+ - elementy v tomto pořadí
+</dt>
+      <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-ppp_vzniká_na_základě_služby-iri"><code>&lt;iri&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-ppp_vzniká_na_základě_služby-má_identifikátor_služby"><code>&lt;má_identifikátor_služby&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-ppp_vzniká_na_základě_služby-má_název_služby"><code>&lt;má_název_služby&gt;</code></a> [0..*]
+      </li>
+      <li>
+          element <a href="#element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-ppp_vzniká_na_základě_služby-je_poskytována_v_rámci_agendy"><code>&lt;je_poskytována_v_rámci_agendy&gt;</code></a> [0..*]
+      </li>
+  </ul>
+
+
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-ppp_vzniká_na_základě_služby-iri">
+  <h4>Element <code>&lt;ppp_vzniká_na_základě_služby&gt;</code> / <code>&lt;iri&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>1..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-ppp_vzniká_na_základě_služby"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-ppp_vzniká_na_základě_služby-má_identifikátor_služby">
+  <h4>Element <code>&lt;ppp_vzniká_na_základě_služby&gt;</code> / <code>&lt;má_identifikátor_služby&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#má-identifikátor-služby"><strong>Má identifikátor služby</strong></a>
+          (Automaticky (stejně jako v případě agendy nebo činnosti) generovaný kód sloužící pro databázové zpracování údajů.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-ppp_vzniká_na_základě_služby"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanySimpleType"><code>xs:anySimpleType</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-ppp_vzniká_na_základě_služby-má_název_služby">
+  <h4>Element <code>&lt;ppp_vzniká_na_základě_služby&gt;</code> / <code>&lt;má_název_služby&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#má-název-služby"><strong>Má název služby</strong></a>
+          (Název by měl klientovi stručně a jasně vystihnout, o jakou službu se jedná. Důležité je, aby byl nezaměnitelný s jinou službou, ale stále velmi jednoduchý, srozumitelný a zapamatovatelný. Měřítkem je, že název služby je používaný (bude používán) v běžném hovoru lidí.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-ppp_vzniká_na_základě_služby"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanySimpleType"><code>xs:anySimpleType</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-ppp_vzniká_na_základě_služby-je_poskytována_v_rámci_agendy">
+  <h4>Element <code>&lt;ppp_vzniká_na_základě_služby&gt;</code> / <code>&lt;je_poskytována_v_rámci_agendy&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#je-poskytována-v-rámci-agendy"><strong>Je poskytována v rámci agendy</strong></a>
+          (Přiřazuje úkon do agendy, v rámci které je vykonáván. Úkon je vždy vykonáván v právě jedné agendě. V jedné agendě může být vykonáváno více úkonů.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-ppp_vzniká_na_základě_služby"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+
+
+        <dt>Význam</dt>
+      <dd>
+        <a href="#agenda">Agenda</a>
+        (Ucelená oblast působnosti orgánu veřejné moci nebo ucelená oblast působení soukromoprávního uživatele údajů.)
+      </dd>
+
+
+
+        <dt>Obsah 
+ - elementy v tomto pořadí
+</dt>
+      <ul style="margin-top: 0;">
+      <li>
+          element <a href="#element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-ppp_vzniká_na_základě_služby-je_poskytována_v_rámci_agendy-iri"><code>&lt;iri&gt;</code></a> [1..1]
+      </li>
+      <li>
+          element <a href="#element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-ppp_vzniká_na_základě_služby-je_poskytována_v_rámci_agendy-má_kód_agendy"><code>&lt;má_kód_agendy&gt;</code></a> [0..*]
+      </li>
+  </ul>
+
+
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-ppp_vzniká_na_základě_služby-je_poskytována_v_rámci_agendy-iri">
+  <h4>Element <code>&lt;ppp_vzniká_na_základě_služby&gt;</code> / <code>&lt;je_poskytována_v_rámci_agendy&gt;</code> / <code>&lt;iri&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>1..1</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-ppp_vzniká_na_základě_služby-je_poskytována_v_rámci_agendy"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-ppp_vzniká_na_základě_služby-je_poskytována_v_rámci_agendy-má_kód_agendy">
+  <h4>Element <code>&lt;ppp_vzniká_na_základě_služby&gt;</code> / <code>&lt;je_poskytována_v_rámci_agendy&gt;</code> / <code>&lt;má_kód_agendy&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#má-kód-agendy"><strong>Má kód agendy</strong></a>
+          (Kód agendy je veřejným identifikátorem, který je jednoznačně přiřazen záznamu o agendě v číselníku agend v registru práv a povinností.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-ppp_vzniká_na_základě_služby-je_poskytována_v_rámci_agendy"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanySimpleType"><code>xs:anySimpleType</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-správnost_ppp_má_ověřovat">
+  <h4>Element <code>&lt;správnost_ppp_má_ověřovat&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#správnost-ppp-má-ověřovat"><strong>správnost PPP má ověřovat</strong></a>
+          (Právo na zápis práva, povinnosti nebo právní skutečnosti uplatní uživatel služby prostřednictvím Agentury u příslušného orgánu veřejné moci, který učinil podkladový úkon. Příslušný orgán veřejné moci osvědčí existenci práva, povinnosti nebo právní skutečnosti a potvrdí ji Agentuře, která ji zapíše do registru práv a povinností.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-šablona_práva,_povinnosti_nebo_právní_skutečnosti"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-správnost_ppp_má_ověřovat">
+  <h4>Element <code>&lt;správnost_ppp_má_ověřovat&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#správnost-ppp-má-ověřovat"><strong>správnost PPP má ověřovat</strong></a>
+          (Právo na zápis práva, povinnosti nebo právní skutečnosti uplatní uživatel služby prostřednictvím Agentury u příslušného orgánu veřejné moci, který učinil podkladový úkon. Příslušný orgán veřejné moci osvědčí existenci práva, povinnosti nebo právní skutečnosti a potvrdí ji Agentuře, která ji zapíše do registru práv a povinností.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-šablona_práva,_povinnosti_nebo_právní_skutečnosti"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+
+      <dt>Obsah</dt>
+        <dd>
+          Obsahem elementu je jednoduchý typ <code>u:n</code>.
+        </dd>
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+<section id="element-šablona_práva,_povinnosti_nebo_právní_skutečnosti-správnost_ppp_má_ověřovat">
+  <h4>Element <code>&lt;správnost_ppp_má_ověřovat&gt;</code></h4>
+
+  <dl>
+    <dt>Význam</dt>
+    <dd>
+        <i>
+          
+          vlastnost
+          
+          
+        </i>
+
+          <a href="#správnost-ppp-má-ověřovat"><strong>správnost PPP má ověřovat</strong></a>
+          (Právo na zápis práva, povinnosti nebo právní skutečnosti uplatní uživatel služby prostřednictvím Agentury u příslušného orgánu veřejné moci, který učinil podkladový úkon. Příslušný orgán veřejné moci osvědčí existenci práva, povinnosti nebo právní skutečnosti a potvrdí ji Agentuře, která ji zapíše do registru práv a povinností.)
+
+    </dd>
+
+      <dt>Efektivní kardinalita elementu vůči nadřazeném elementu</dt>
+      <dd>0..*</dd>
+      <dt>Nadřazený element</dt>
+      <dd><a href="#type-šablona_práva,_povinnosti_nebo_právní_skutečnosti"></a></dd>
+
+    
+      <dt>Typ elementu</dt>
+        <div style="margin-left: 40px;">
+      <dt>Obsah</dt>
+      <dd>
+          Obsahem elementu je typ <a href="http://www.w3.org/2001/XMLSchemaanyURI"><code>xs:anyURI</code></a>.
+      </dd>
+
+
+    
+
+
+    
+  </div>
+
+    
+  </dl>
+</section>
+
+</section>
+      </section>
+
+    <section>
+      <h2>Použité prefixy</h2>
+      <table id="table-namespaces" class="simple">
+        <thead><tr><th>Prefix</th><th>Namespace IRI</th></tr></thead>
+        <tbody>
+            <tr><td><code>rdfs</code></td><td><a href="http://www.w3.org/2000/01/rdf-schema#"><code>http://www.w3.org/2000/01/rdf-schema#</code></a></td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section id="přílohy">
+      <h2>Přílohy</h2>
+        <p>Součástí této specifikace jsou následující přílohy.</p>
+        <table class="def">
+        <thead>
+          <tr>
+            <th>Příloha</th>
+            <th>Odkaz</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>Slovník</td>
+              <td><a href="../model.owl.ttl">../model.owl.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Aplikační profil</td>
+              <td><a href="../dsv.ttl">../dsv.ttl</a></td>
+            </tr>
+            <tr>
+              <td>SHACL validační pravidla</td>
+              <td><a href="../shacl.ttl">../shacl.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Popis strukturálního modelu</td>
+              <td><a href="../%C5%A1ablona-pr%C3%A1va,-povinnosti-nebo-pr%C3%A1vn%C3%AD-skute%C4%8Dnosti/structure.ttl">../%C5%A1ablona-pr%C3%A1va,-povinnosti-nebo-pr%C3%A1vn%C3%AD-skute%C4%8Dnosti/structure.ttl</a></td>
+            </tr>
+            <tr><td>JSON schéma</td><td><a href="../schema.json">../schema.json</a></td></tr>
+            <tr><td>Příklad JSONu</td><td><a href="../example.json">../example.json</a></td></tr>
+            <tr><td>JSON-LD kontext</td><td><a href="../context.jsonld">../context.jsonld</a></td></tr>
+            <tr><td>XML schéma</td><td><a href="../schema.xsd">../schema.xsd</a></td></tr>
+            <tr><td>CSV schéma</td><td><a href="../schema.csv-metadata.json">../schema.csv-metadata.json</a></td></tr>
+            <tr><td>RDF to CSV</td><td><a href="../rdf-to-csv/">../rdf-to-csv/</a></td></tr>
+            <tr><td>SPARQL</td><td><a href="../query.sparql">../query.sparql</a></td></tr>
+            <tr><td>SHACL</td><td><a href="../shacl-shapes.ttl">../shacl-shapes.ttl</a></td></tr>
+            <tr><td>ShEx</td><td><a href="../validation.shex">../validation.shex</a></td></tr>
+            <tr><td>ShEx Map</td><td><a href="../validation.shexmap">../validation.shexmap</a></td></tr>
+            <tr><td>OpenAPI</td><td><a href="../openapi-specification.yaml">../openapi-specification.yaml</a></td></tr>
+            <tr><td>PlantUML diagram</td><td><a href="../conceptual-model.plantuml">../conceptual-model.plantuml</a></td></tr>
+            <tr><td>Konceptuální diagram</td><td><a href="../conceptual-model.svg">../conceptual-model.svg</a></td></tr>
+            <tr><td>Dokumentace</td><td><a href="">#</a></td></tr>
+        </tbody>
+      </table>
+    </section>  </body>
+</html>

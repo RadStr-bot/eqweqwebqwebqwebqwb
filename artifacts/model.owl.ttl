@@ -1,0 +1,110 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix prof: <http://www.w3.org/ns/dx/prof/>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+<> a owl:Ontology, prof:Profile.
+<https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie> a owl:Class, rdfs:Class;
+    rdfs:label "Orgán veřejné moci nebo kategorie"@cs;
+    rdfs:comment "Orgán veřejné moci nebo kategorie"@cs;
+    rdfs:isDefinedBy <>.
+<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti> a owl:Class, rdfs:Class;
+    rdfs:label "Šablona práva, povinnosti nebo právní skutečnosti"@cs;
+    rdfs:comment "Seznam práv, povinností a právních skutečností (PPP), které lze na základě § 8 zákona č. 12/2020 Sb. zapsat do RPP. Šablona představuje číselník PPP, u kterých je prostřednictvím Portálu občana zápis do RPP umožněn."@cs;
+    rdfs:isDefinedBy <>.
+<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/kód-šablony-ppp> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "kód šablony PPP"@cs;
+    rdfs:comment "Kód šablony (typu) generovaný při vytvoření typu. Kód typu je ve formátu: prefix PPP a pořadové číslo (např. PPP-12)."@cs;
+    rdfs:isDefinedBy <>;
+    rdfs:domain <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti>;
+    rdfs:range rdfs:Literal.
+<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/název-šablony-ppp> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "název šablony PPP"@cs;
+    rdfs:comment "Název šablony (typu) práva, povinnosti a právní skutečnosti."@cs;
+    rdfs:isDefinedBy <>;
+    rdfs:domain <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti>;
+    rdfs:range rdfs:Literal.
+<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/platnost-šablony-ppp-od> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "platnost šablony PPP od"@cs;
+    rdfs:comment "Datum, od kdy šablona (typ) platí."@cs;
+    rdfs:isDefinedBy <>;
+    rdfs:domain <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti>;
+    rdfs:range rdfs:Literal.
+<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/ppp-vzniká-na-základě-služby> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "PPP vzniká na základě služby"@cs;
+    rdfs:comment "Uživatel služby má právo na zápis práva, povinnosti nebo právní skutečnosti, která se jej týká a vyplývá z úkonu orgánu veřejné moci uvedeného v katalogu služeb, do registru práv a povinností, nejsou-li právo, povinnost nebo právní skutečnost zapsány v základním registru nebo agendovém informačním systému."@cs;
+    rdfs:isDefinedBy <>;
+    rdfs:domain <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti>;
+    rdfs:range <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy>.
+<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "správnost PPP má ověřovat"@cs;
+    rdfs:comment "Právo na zápis práva, povinnosti nebo právní skutečnosti uplatní uživatel služby prostřednictvím Agentury u příslušného orgánu veřejné moci, který učinil podkladový úkon. Příslušný orgán veřejné moci osvědčí existenci práva, povinnosti nebo právní skutečnosti a potvrdí ji Agentuře, která ji zapíše do registru práv a povinností."@cs;
+    rdfs:isDefinedBy <>;
+    rdfs:domain <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti>;
+    rdfs:range <https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie>.
+<https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda> a owl:Class, rdfs:Class;
+    rdfs:label "Agenda"@cs;
+    rdfs:comment "Ucelená oblast působnosti orgánu veřejné moci nebo ucelená oblast působení soukromoprávního uživatele údajů."@cs;
+    rdfs:isDefinedBy <>.
+<https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "Má kód agendy"@cs;
+    rdfs:comment "Kód agendy je veřejným identifikátorem, který je jednoznačně přiřazen záznamu o agendě v číselníku agend v registru práv a povinností."@cs;
+    rdfs:isDefinedBy <>;
+    rdfs:domain <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda>;
+    rdfs:range rdfs:Literal.
+<https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci> a owl:Class, rdfs:Class;
+    rdfs:label "Orgán veřejné moci"@cs;
+    rdfs:comment "Orgánem veřejné moci se rozumí státní orgán, územní samosprávný celek a fyzická nebo právnická osoba, byla-li jí svěřena působnost v oblasti veřejné správy."@cs;
+    rdfs:isDefinedBy <>;
+    rdfs:subClassOf <https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie>, <https://slovník.gov.cz/veřejný-sektor/pojem/orgán-veřejné-moci>.
+<https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonu> a owl:Class, rdfs:Class;
+    rdfs:label "Poskytování úkonu"@cs;
+    rdfs:comment "Konkrétní poskytování úkonu definované jako dvojice poskytovat úkonu a příslušná činnost agendy, v rámci které je úkon poskytovatelem poskytován."@cs;
+    rdfs:isDefinedBy <>.
+<https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-poskytovatele> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "Má poskytovatele"@cs;
+    rdfs:comment "Určuje poskytovatele úkonu, kterým je vždy orgán veřejné moci nebo jejich kategorie. Jeden úkon může mít více poskytovatelů. Jeden poskytovatel může poskytovat více úkonů."@cs;
+    rdfs:isDefinedBy <>;
+    rdfs:domain <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonu>;
+    rdfs:range <https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie>.
+<https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy> a owl:Class, rdfs:Class;
+    rdfs:label "Služba veřejné správy"@cs;
+    rdfs:comment "Služba veřejné správy představuje funkci (činnost) úřadu, která je vědomě poskytnuta konkrétním OVM konkrétnímu příjemci služby podle příslušného právního předpisu tak, že přináší příjemci vnímanou hodnotu, ať už v podobě benefitu nebo splnění zákonné povinnosti. Evidují se pouze takové služby VS, během nichž dochází k interakci mezi OVM a klientem či naopak, nikoli k interakci mezi OVM a OVM. Na službu VS lze také pohlížet jako na dosažení práva či naplnění povinnosti klienta, které nelze splnit jinak než interakcí či sérií interakcí mezi klientem a OVM. Služba se dělí podle toho, zdali je iniciována klientem nebo vykonávaná z moci úřední. Každá služba se skládá z nejméně jednoho úkonu."@cs;
+    rdfs:isDefinedBy <>.
+<https://slovník.gov.cz/agendový/104/pojem/je-poskytována-v-rámci-agendy> a rdf:Property, owl:ObjectProperty;
+    rdfs:label "Je poskytována v rámci agendy"@cs;
+    rdfs:comment "Přiřazuje úkon do agendy, v rámci které je vykonáván. Úkon je vždy vykonáván v právě jedné agendě. V jedné agendě může být vykonáváno více úkonů."@cs;
+    rdfs:isDefinedBy <>;
+    rdfs:domain <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy>;
+    rdfs:range <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda>.
+<https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "Má identifikátor služby"@cs;
+    rdfs:comment "Automaticky (stejně jako v případě agendy nebo činnosti) generovaný kód sloužící pro databázové zpracování údajů."@cs;
+    rdfs:isDefinedBy <>;
+    rdfs:domain <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy>;
+    rdfs:range rdfs:Literal.
+<https://slovník.gov.cz/agendový/104/pojem/má-název-služby> a rdf:Property, owl:DatatypeProperty;
+    rdfs:label "Má název služby"@cs;
+    rdfs:comment "Název by měl klientovi stručně a jasně vystihnout, o jakou službu se jedná. Důležité je, aby byl nezaměnitelný s jinou službou, ale stále velmi jednoduchý, srozumitelný a zapamatovatelný. Měřítkem je, že název služby je používaný (bude používán) v běžném hovoru lidí."@cs;
+    rdfs:isDefinedBy <>;
+    rdfs:domain <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy>;
+    rdfs:range rdfs:Literal.
+<https://slovník.gov.cz/veřejný-sektor/pojem/organizace> a owl:Class, rdfs:Class;
+    rdfs:label "Organizace"@cs, "Organization"@en;
+    rdfs:comment "Organizace je uskupení lidí, které je agentem."@cs, "Organization is any group of people, which is also an agent."@en;
+    rdfs:isDefinedBy <>;
+    rdfs:subClassOf <https://slovník.gov.cz/veřejný-sektor/pojem/právnická-osoba>.
+<https://slovník.gov.cz/veřejný-sektor/pojem/orgán-veřejné-moci> a owl:Class, rdfs:Class;
+    rdfs:label "Orgán veřejné moci"@cs, "Public Authority"@en;
+    rdfs:comment "Orgán veřejné moci  je organizace, která reprezentuje veřejnou moc a je ze zákona oprávněna autoritativně rozhodovat o právech a povinnostech osob."@cs, "Public Authority is an organization which has a legal mandate to govern, administrate some part of public life."@en;
+    rdfs:isDefinedBy <>;
+    rdfs:subClassOf <https://slovník.gov.cz/veřejný-sektor/pojem/organizace>.
+<https://slovník.gov.cz/veřejný-sektor/pojem/právnická-osoba> a owl:Class, rdfs:Class;
+    rdfs:label "Právnická osoba"@cs, "Legal Entity"@en;
+    rdfs:comment "Právnická osoba je organizací, která je subjektem práva."@cs, "Legal Person is an organization as a legal subject."@en;
+    rdfs:isDefinedBy <>;
+    rdfs:subClassOf <https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-práva>.
+<https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-práva> a owl:Class, rdfs:Class;
+    rdfs:label "Subjekt práva"@cs, "Legal Subject"@en;
+    rdfs:comment "Subjekt práva je osoba,  která se účastní právních vztahů."@cs, "Legal Subject is a person participating in one or more legal relationships."@en;
+    rdfs:isDefinedBy <>.

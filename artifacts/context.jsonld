@@ -1,0 +1,66 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "id": "@id",
+    "type": "@type",
+    "@base": "https://rpp-opendata.egon.gov.cz/odrpp/zdroj/",
+    "položky": "@graph",
+    "Šablona práva, povinnosti nebo právní skutečnosti": {
+      "@id": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti",
+      "@context": {
+        "kód_šablony_ppp": {
+          "@id": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/kód-šablony-ppp",
+          "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "název_šablony_ppp": {
+          "@id": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/název-šablony-ppp",
+          "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "platnost_šablony_ppp_od": {
+          "@id": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/platnost-šablony-ppp-od",
+          "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        },
+        "ppp_vzniká_na_základě_služby": {
+          "@id": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/ppp-vzniká-na-základě-služby",
+          "@container": "@set",
+          "@context": {
+            "Služba veřejné správy": {
+              "@id": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy",
+              "@context": {
+                "má_identifikátor_služby": {
+                  "@id": "https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby",
+                  "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+                },
+                "má_název_služby": {
+                  "@id": "https://slovník.gov.cz/agendový/104/pojem/má-název-služby",
+                  "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+                },
+                "je_poskytována_v_rámci_agendy": {
+                  "@id": "https://slovník.gov.cz/agendový/104/pojem/je-poskytována-v-rámci-agendy",
+                  "@container": "@set",
+                  "@context": {
+                    "Agenda": {
+                      "@id": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda",
+                      "@context": {
+                        "má_kód_agendy": {
+                          "@id": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy",
+                          "@type": "http://www.w3.org/2000/01/rdf-schema#Literal"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "správnost_ppp_má_ověřovat": {
+          "@id": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat",
+          "@type": "@id",
+          "@container": "@set"
+        }
+      }
+    }
+  }
+}

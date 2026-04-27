@@ -1,0 +1,116 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<> rdfs:member <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnostiShape>, <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správyShape>, <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agendaShape>, <https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorieShape>, <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonuShape>, <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-mociShape>, <https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-právaShape>.
+
+<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnostiShape> a sh:NodeShape;
+    rdfs:seeAlso <šablona-práva--povinnosti-nebo-právní-skutečnosti>;
+    sh:closed false;
+    sh:targetClass <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti>.
+
+<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnostiShape/6031cf6a> a sh:PropertyShape;
+    sh:name "kód šablony PPP"@cs;
+    sh:nodeKind sh:Literal;
+    sh:path <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/kód-šablony-ppp>.
+
+<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnostiShape> sh:property <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnostiShape/6031cf6a>.
+
+<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnostiShape/-325473f2> a sh:PropertyShape;
+    sh:name "název šablony PPP"@cs;
+    sh:nodeKind sh:Literal;
+    sh:path <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/název-šablony-ppp>.
+
+<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnostiShape> sh:property <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnostiShape/-325473f2>.
+
+<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnostiShape/-60acf67f> a sh:PropertyShape;
+    sh:name "platnost šablony PPP od"@cs;
+    sh:nodeKind sh:Literal;
+    sh:path <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/platnost-šablony-ppp-od>.
+
+<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnostiShape> sh:property <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnostiShape/-60acf67f>.
+
+<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnostiShape/-7aebd592> a sh:PropertyShape;
+    sh:name "PPP vzniká na základě služby"@cs;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/ppp-vzniká-na-základě-služby>;
+    sh:class <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy>.
+
+<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnostiShape> sh:property <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnostiShape/-7aebd592>.
+
+<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnostiShape/-720e78c> a sh:PropertyShape;
+    sh:name "správnost PPP má ověřovat"@cs;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat>;
+    sh:class <https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie>.
+
+<https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnostiShape> sh:property <https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnostiShape/-720e78c>.
+
+<https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správyShape> a sh:NodeShape;
+    rdfs:seeAlso <služba-veřejné-správy>;
+    sh:closed false;
+    sh:targetClass <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy>.
+
+<https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správyShape/724a0d53> a sh:PropertyShape;
+    sh:name "Má název služby"@cs;
+    sh:nodeKind sh:Literal;
+    sh:path <https://slovník.gov.cz/agendový/104/pojem/má-název-služby>.
+
+<https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správyShape> sh:property <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správyShape/724a0d53>.
+
+<https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správyShape/-1cb99b80> a sh:PropertyShape;
+    sh:name "Má identifikátor služby"@cs;
+    sh:nodeKind sh:Literal;
+    sh:path <https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby>.
+
+<https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správyShape> sh:property <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správyShape/-1cb99b80>.
+
+<https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správyShape/-54171133> a sh:PropertyShape;
+    sh:name "Je poskytována v rámci agendy"@cs;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <https://slovník.gov.cz/agendový/104/pojem/je-poskytována-v-rámci-agendy>;
+    sh:class <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda>.
+
+<https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správyShape> sh:property <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správyShape/-54171133>.
+
+<https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agendaShape> a sh:NodeShape;
+    rdfs:seeAlso <agenda>;
+    sh:closed false;
+    sh:targetClass <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda>.
+
+<https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agendaShape/71361b57> a sh:PropertyShape;
+    sh:name "Má kód agendy"@cs;
+    sh:nodeKind sh:Literal;
+    sh:path <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy>.
+
+<https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agendaShape> sh:property <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agendaShape/71361b57>.
+
+<https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorieShape> a sh:NodeShape;
+    rdfs:seeAlso <orgán-veřejné-moci-nebo-kategorie>;
+    sh:closed false;
+    sh:targetClass <https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie>.
+
+<https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonuShape> a sh:NodeShape;
+    rdfs:seeAlso <poskytování-úkonu>;
+    sh:closed false;
+    sh:targetClass <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonu>.
+
+<https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonuShape/-97c90f1> a sh:PropertyShape;
+    sh:name "Má poskytovatele"@cs;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-poskytovatele>;
+    sh:class <https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie>.
+
+<https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonuShape> sh:property <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonuShape/-97c90f1>.
+
+<https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-mociShape> a sh:NodeShape;
+    rdfs:seeAlso <orgán-veřejné-moci>;
+    sh:closed false;
+    sh:targetClass <https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci>.
+
+<https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-právaShape> a sh:NodeShape;
+    rdfs:seeAlso <subjekt-práva>;
+    sh:closed false;
+    sh:targetClass <https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-práva>.
+

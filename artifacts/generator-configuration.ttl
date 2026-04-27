@@ -1,0 +1,14 @@
+@prefix : <generator-configuration#>.
+@prefix dsvgc: <https://dataspecer.com/work-in-progress/generator-configuration/>.
+@prefix ce: <https://dataspecer.com/work-in-progress/generator-configuration/configuration-entry/>.
+@prefix kv: <https://dataspecer.com/work-in-progress/generator-configuration/key-value/>.
+
+<generator-configuration#> a dsvgc:configuration;
+    dsvgc:has-configurations :json.
+:json a <https://dataspecer.com/work-in-progress/generator-configuration/configuration-entry/>;
+    dsvgc:has-configuration-type ce:json;
+    kv:dereferenceContext "true";
+    kv:dereferenceSchema "true";
+    kv:jsonLdBaseUrl "\"https://rpp-opendata.egon.gov.cz/odrpp/zdroj/\"";
+    kv:jsonRootCardinality "\"object-with-array\"";
+    kv:jsonRootCardinalityObjectKey "\"položky\"".

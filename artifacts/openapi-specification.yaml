@@ -1,0 +1,106 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Your API Title",
+    "version": "1.0.0",
+    "description": "Your API Description"
+  },
+  "paths": {
+    "/šablona_práva,_povinnosti_nebo_právní_skutečnosti": {
+      "parameters": [
+        {
+          "name": "kód_šablony_ppp",
+          "in": "path",
+          "required": 0,
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "název_šablony_ppp",
+          "in": "path",
+          "required": 0,
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "platnost_šablony_ppp_od",
+          "in": "path",
+          "required": 0,
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "ppp_vzniká_na_základě_služby",
+          "in": "path",
+          "required": 0,
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "správnost_ppp_má_ověřovat",
+          "in": "path",
+          "required": 0,
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "správnost_ppp_má_ověřovat",
+          "in": "path",
+          "required": 0,
+          "schema": {
+            "type": "string"
+          }
+        },
+        {
+          "name": "správnost_ppp_má_ověřovat",
+          "in": "path",
+          "required": 0,
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "get": {
+        "responses": {
+          "200": {
+            "description": "Successful response",
+            "content": {
+              "application/json": {
+                "example": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "šablona_práva,_povinnosti_nebo_právní_skutečnosti": {
+        "type": "object",
+        "properties": {
+          "kód_šablony_ppp": {
+            "type": "string"
+          },
+          "název_šablony_ppp": {
+            "type": "string"
+          },
+          "platnost_šablony_ppp_od": {
+            "type": "string"
+          },
+          "ppp_vzniká_na_základě_služby": {
+            "type": "string"
+          },
+          "správnost_ppp_má_ověřovat": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
