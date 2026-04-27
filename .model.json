@@ -1,0 +1,17 @@
+{
+  "modelCompositionConfiguration": {
+    "modelType": "application-profile",
+    "model": "883d434a-4f5f-433e-9f83-12c33ea5cb34",
+    "profiles": {
+      "modelType": "merge"
+    }
+  },
+  "userPreferences": {},
+  "configuration": {
+    "http://dataspecer.com/resources/local/git-remote-configuration": {
+      "publicationBranch": "publication-branch",
+      "exportFormat": "json",
+      "exportVersion": 2
+    }
+  }
+}

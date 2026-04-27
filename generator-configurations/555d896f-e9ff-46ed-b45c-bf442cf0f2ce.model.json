@@ -1,0 +1,9 @@
+{
+  "json": {
+    "jsonRootCardinality": "object-with-array",
+    "jsonLdBaseUrl": "https://rpp-opendata.egon.gov.cz/odrpp/zdroj/",
+    "jsonRootCardinalityObjectKey": "položky",
+    "dereferenceSchema": true,
+    "dereferenceContext": true
+  }
+}

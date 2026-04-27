@@ -1,0 +1,680 @@
+{
+  "type": "http://dataspecer.com/resources/local/semantic-model",
+  "modelId": "883d434a-4f5f-433e-9f83-12c33ea5cb34",
+  "modelAlias": "Main Application Profile",
+  "baseIri": "",
+  "entities": {
+    "hspjwsyfudumoh2wbdi": {
+      "iri": "šablona-práva--povinnosti-nebo-právní-skutečnosti",
+      "name": null,
+      "nameFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti",
+      "description": null,
+      "descriptionFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti",
+      "usageNote": null,
+      "usageNoteFromProfiled": null,
+      "profiling": [
+        "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti"
+      ],
+      "externalDocumentationUrl": null,
+      "tags": [],
+      "id": "hspjwsyfudumoh2wbdi",
+      "type": [
+        "class-profile"
+      ]
+    },
+    "dz1ubc04ofomoh3lw81": {
+      "ends": [
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/kód-šablony-ppp",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/kód-šablony-ppp",
+          "iri": null,
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "hspjwsyfudumoh2wbdi"
+        },
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/kód-šablony-ppp",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/kód-šablony-ppp",
+          "iri": "kód-šablony-ppp",
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [
+            "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/kód-šablony-ppp"
+          ],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      ],
+      "id": "dz1ubc04ofomoh3lw81",
+      "type": [
+        "relationship-profile"
+      ]
+    },
+    "xk0vv5r0j5moh3m4wr": {
+      "ends": [
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/název-šablony-ppp",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/název-šablony-ppp",
+          "iri": null,
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "hspjwsyfudumoh2wbdi"
+        },
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/název-šablony-ppp",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/název-šablony-ppp",
+          "iri": "název-šablony-ppp",
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [
+            "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/název-šablony-ppp"
+          ],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      ],
+      "id": "xk0vv5r0j5moh3m4wr",
+      "type": [
+        "relationship-profile"
+      ]
+    },
+    "96dnv1h1d8moh3mft1": {
+      "ends": [
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/platnost-šablony-ppp-od",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/platnost-šablony-ppp-od",
+          "iri": null,
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "hspjwsyfudumoh2wbdi"
+        },
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/platnost-šablony-ppp-od",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/platnost-šablony-ppp-od",
+          "iri": "platnost-šablony-ppp-od",
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [
+            "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/platnost-šablony-ppp-od"
+          ],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      ],
+      "id": "96dnv1h1d8moh3mft1",
+      "type": [
+        "relationship-profile"
+      ]
+    },
+    "ut21o6dlynmoh3n0u1": {
+      "iri": "služba-veřejné-správy",
+      "name": null,
+      "nameFromProfiled": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy",
+      "description": null,
+      "descriptionFromProfiled": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy",
+      "usageNote": null,
+      "usageNoteFromProfiled": null,
+      "profiling": [
+        "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy"
+      ],
+      "externalDocumentationUrl": null,
+      "tags": [],
+      "id": "ut21o6dlynmoh3n0u1",
+      "type": [
+        "class-profile"
+      ]
+    },
+    "w2ahnz67ebhmoh3n0u1": {
+      "ends": [
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/ppp-vzniká-na-základě-služby",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/ppp-vzniká-na-základě-služby",
+          "iri": null,
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "hspjwsyfudumoh2wbdi"
+        },
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/ppp-vzniká-na-základě-služby",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/ppp-vzniká-na-základě-služby",
+          "iri": "ppp-vzniká-na-základě-služby",
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [
+            "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/ppp-vzniká-na-základě-služby"
+          ],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "ut21o6dlynmoh3n0u1"
+        }
+      ],
+      "id": "w2ahnz67ebhmoh3n0u1",
+      "type": [
+        "relationship-profile"
+      ]
+    },
+    "ak289rg8944moh3nbg6": {
+      "ends": [
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/agendový/104/pojem/má-název-služby",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/agendový/104/pojem/má-název-služby",
+          "iri": null,
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "ut21o6dlynmoh3n0u1"
+        },
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/agendový/104/pojem/má-název-služby",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/agendový/104/pojem/má-název-služby",
+          "iri": "má-název-služby",
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [
+            "https://slovník.gov.cz/agendový/104/pojem/má-název-služby"
+          ],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      ],
+      "id": "ak289rg8944moh3nbg6",
+      "type": [
+        "relationship-profile"
+      ]
+    },
+    "cmy8n0c7rymoh3o2k0": {
+      "ends": [
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby",
+          "iri": null,
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "ut21o6dlynmoh3n0u1"
+        },
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby",
+          "iri": "má-identifikátor-služby",
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [
+            "https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby"
+          ],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      ],
+      "id": "cmy8n0c7rymoh3o2k0",
+      "type": [
+        "relationship-profile"
+      ]
+    },
+    "bqq3bv7194moh3p4gz": {
+      "iri": "agenda",
+      "name": null,
+      "nameFromProfiled": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda",
+      "description": null,
+      "descriptionFromProfiled": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda",
+      "usageNote": null,
+      "usageNoteFromProfiled": null,
+      "profiling": [
+        "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda"
+      ],
+      "externalDocumentationUrl": null,
+      "tags": [],
+      "id": "bqq3bv7194moh3p4gz",
+      "type": [
+        "class-profile"
+      ]
+    },
+    "qq9u0sah1kmoh3p4gz": {
+      "ends": [
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/agendový/104/pojem/je-poskytována-v-rámci-agendy",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/agendový/104/pojem/je-poskytována-v-rámci-agendy",
+          "iri": null,
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "ut21o6dlynmoh3n0u1"
+        },
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/agendový/104/pojem/je-poskytována-v-rámci-agendy",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/agendový/104/pojem/je-poskytována-v-rámci-agendy",
+          "iri": "je-poskytována-v-rámci-agendy",
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [
+            "https://slovník.gov.cz/agendový/104/pojem/je-poskytována-v-rámci-agendy"
+          ],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "bqq3bv7194moh3p4gz"
+        }
+      ],
+      "id": "qq9u0sah1kmoh3p4gz",
+      "type": [
+        "relationship-profile"
+      ]
+    },
+    "9750cq8wjwjmoh3pljp": {
+      "ends": [
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy",
+          "iri": null,
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "bqq3bv7194moh3p4gz"
+        },
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy",
+          "iri": "má-kód-agendy",
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [
+            "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy"
+          ],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "http://www.w3.org/2000/01/rdf-schema#Literal"
+        }
+      ],
+      "id": "9750cq8wjwjmoh3pljp",
+      "type": [
+        "relationship-profile"
+      ]
+    },
+    "me9eootw9pmoh3xp0f": {
+      "iri": "orgán-veřejné-moci-nebo-kategorie",
+      "name": null,
+      "nameFromProfiled": "https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie",
+      "description": null,
+      "descriptionFromProfiled": "https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie",
+      "usageNote": null,
+      "usageNoteFromProfiled": null,
+      "profiling": [
+        "https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie"
+      ],
+      "externalDocumentationUrl": null,
+      "tags": [],
+      "id": "me9eootw9pmoh3xp0f",
+      "type": [
+        "class-profile"
+      ]
+    },
+    "n4btpwqpg8moh3xp0g": {
+      "ends": [
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat",
+          "iri": null,
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "hspjwsyfudumoh2wbdi"
+        },
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat",
+          "iri": "správnost-ppp-má-ověřovat",
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [
+            "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat"
+          ],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "me9eootw9pmoh3xp0f"
+        }
+      ],
+      "id": "n4btpwqpg8moh3xp0g",
+      "type": [
+        "relationship-profile"
+      ]
+    },
+    "jvu8603lz5moh3yoco": {
+      "ends": [
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat",
+          "iri": null,
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "hspjwsyfudumoh2wbdi"
+        },
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat",
+          "iri": "správnost-ppp-má-ověřovat",
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [
+            "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat"
+          ],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "me9eootw9pmoh3xp0f"
+        }
+      ],
+      "id": "jvu8603lz5moh3yoco",
+      "type": [
+        "relationship-profile"
+      ]
+    },
+    "u1nckhzjczmoh3zquq": {
+      "ends": [
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat",
+          "iri": null,
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "hspjwsyfudumoh2wbdi"
+        },
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat",
+          "iri": "správnost-ppp-má-ověřovat",
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [
+            "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat"
+          ],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "me9eootw9pmoh3xp0f"
+        }
+      ],
+      "id": "u1nckhzjczmoh3zquq",
+      "type": [
+        "relationship-profile"
+      ]
+    },
+    "40v47z1a3jsmoh40l8b": {
+      "iri": "poskytování-úkonu",
+      "name": null,
+      "nameFromProfiled": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonu",
+      "description": null,
+      "descriptionFromProfiled": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonu",
+      "usageNote": null,
+      "usageNoteFromProfiled": null,
+      "profiling": [
+        "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonu"
+      ],
+      "externalDocumentationUrl": null,
+      "tags": [],
+      "id": "40v47z1a3jsmoh40l8b",
+      "type": [
+        "class-profile"
+      ]
+    },
+    "9unxagj2hgnmoh40l8c": {
+      "ends": [
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-poskytovatele",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-poskytovatele",
+          "iri": null,
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "40v47z1a3jsmoh40l8b"
+        },
+        {
+          "name": null,
+          "nameFromProfiled": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-poskytovatele",
+          "description": null,
+          "descriptionFromProfiled": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-poskytovatele",
+          "iri": "má-poskytovatele",
+          "cardinality": [
+            0,
+            null
+          ],
+          "usageNote": null,
+          "usageNoteFromProfiled": null,
+          "profiling": [
+            "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-poskytovatele"
+          ],
+          "externalDocumentationUrl": null,
+          "tags": [],
+          "concept": "me9eootw9pmoh3xp0f"
+        }
+      ],
+      "id": "9unxagj2hgnmoh40l8c",
+      "type": [
+        "relationship-profile"
+      ]
+    },
+    "psfmn8weshmoh4f374": {
+      "iri": "orgán-veřejné-moci",
+      "name": null,
+      "nameFromProfiled": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci",
+      "description": null,
+      "descriptionFromProfiled": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci",
+      "usageNote": null,
+      "usageNoteFromProfiled": null,
+      "profiling": [
+        "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci"
+      ],
+      "externalDocumentationUrl": null,
+      "tags": [],
+      "id": "psfmn8weshmoh4f374",
+      "type": [
+        "class-profile"
+      ]
+    },
+    "ps8bexydkuamoh4ghzs": {
+      "iri": "orgán-veřejné-moci",
+      "name": null,
+      "nameFromProfiled": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci",
+      "description": null,
+      "descriptionFromProfiled": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci",
+      "usageNote": null,
+      "usageNoteFromProfiled": null,
+      "profiling": [
+        "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci"
+      ],
+      "externalDocumentationUrl": null,
+      "tags": [],
+      "id": "ps8bexydkuamoh4ghzs",
+      "type": [
+        "class-profile"
+      ]
+    },
+    "mfxp6dzegkhmoh4haa9": {
+      "iri": "subjekt-práva",
+      "name": null,
+      "nameFromProfiled": "https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-práva",
+      "description": null,
+      "descriptionFromProfiled": "https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-práva",
+      "usageNote": null,
+      "usageNoteFromProfiled": null,
+      "profiling": [
+        "https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-práva"
+      ],
+      "externalDocumentationUrl": null,
+      "tags": [],
+      "id": "mfxp6dzegkhmoh4haa9",
+      "type": [
+        "class-profile"
+      ]
+    }
+  }
+}

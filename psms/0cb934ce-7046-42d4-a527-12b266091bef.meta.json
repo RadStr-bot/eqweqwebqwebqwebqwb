@@ -1,0 +1,21 @@
+{
+  "iri": "0cb934ce-7046-42d4-a527-12b266091bef",
+  "projectIri": "0cb934ce-7046-42d4-a527-12b266091bef",
+  "types": [
+    "http://dataspecer.com/resources/v1/psm"
+  ],
+  "userMetadata": {
+    "label": {
+      "en": "Šablona práva, povinnosti nebo právní skutečnosti",
+      "cs": "Šablona práva, povinnosti nebo právní skutečnosti"
+    },
+    "description": {
+      "en": "Data structure for Šablona práva, povinnosti nebo právní skutečnosti. Seznam práv, povinností a právních skutečností (PPP), které lze na základě § 8 zákona č. 12/2020 Sb. zapsat do RPP. Šablona představuje číselník PPP, u kterých je prostřednictvím Portálu občana zápis do RPP umožněn.",
+      "cs": "Datová struktura pro Šablona práva, povinnosti nebo právní skutečnosti. Seznam práv, povinností a právních skutečností (PPP), které lze na základě § 8 zákona č. 12/2020 Sb. zapsat do RPP. Šablona představuje číselník PPP, u kterých je prostřednictvím Portálu občana zápis do RPP umožněn."
+    }
+  },
+  "metadata": {},
+  "_version": 1,
+  "_exportVersion": 2,
+  "_exportedBy": "http://localhost:3100"
+}

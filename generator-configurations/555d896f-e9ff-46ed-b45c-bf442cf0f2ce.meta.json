@@ -1,0 +1,16 @@
+{
+  "iri": "555d896f-e9ff-46ed-b45c-bf442cf0f2ce",
+  "projectIri": "555d896f-e9ff-46ed-b45c-bf442cf0f2ce",
+  "types": [
+    "http://dataspecer.com/resources/v1/generator-configuration"
+  ],
+  "userMetadata": {
+    "label": {
+      "en": "Artifact configuration"
+    }
+  },
+  "metadata": {},
+  "_version": 1,
+  "_exportVersion": 2,
+  "_exportedBy": "http://localhost:3100"
+}

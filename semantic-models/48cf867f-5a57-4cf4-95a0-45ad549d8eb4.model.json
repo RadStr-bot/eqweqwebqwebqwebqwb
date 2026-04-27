@@ -1,0 +1,654 @@
+{
+  "type": "http://dataspecer.com/resources/local/semantic-model",
+  "caches": [
+    "https://dataspecer.com/adapters/sgov"
+  ],
+  "modelId": "48cf867f-5a57-4cf4-95a0-45ad549d8eb4",
+  "modelAlias": "SGOV cache",
+  "baseIri": "",
+  "entities": {
+    "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti": {
+      "id": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti",
+      "iri": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti",
+      "name": {
+        "cs": "Šablona práva, povinnosti nebo právní skutečnosti"
+      },
+      "description": {
+        "cs": "Seznam práv, povinností a právních skutečností (PPP), které lze na základě § 8 zákona č. 12/2020 Sb. zapsat do RPP. Šablona představuje číselník PPP, u kterých je prostřednictvím Portálu občana zápis do RPP umožněn."
+      },
+      "nameProperty": null,
+      "descriptionProperty": null,
+      "type": [
+        "class"
+      ],
+      "externalDocumentationUrl": null
+    },
+    "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/kód-šablony-ppp": {
+      "id": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/kód-šablony-ppp",
+      "iri": null,
+      "type": [
+        "relationship"
+      ],
+      "name": {},
+      "description": {},
+      "nameProperty": null,
+      "descriptionProperty": null,
+      "ends": [
+        {
+          "cardinality": [
+            0,
+            null
+          ],
+          "name": {},
+          "description": {},
+          "nameProperty": null,
+          "descriptionProperty": null,
+          "concept": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti",
+          "iri": null,
+          "externalDocumentationUrl": null
+        },
+        {
+          "cardinality": [
+            0,
+            null
+          ],
+          "name": {
+            "cs": "kód šablony PPP"
+          },
+          "description": {
+            "cs": "Kód šablony (typu) generovaný při vytvoření typu. Kód typu je ve formátu: prefix PPP a pořadové číslo (např. PPP-12)."
+          },
+          "nameProperty": null,
+          "descriptionProperty": null,
+          "concept": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "iri": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/kód-šablony-ppp",
+          "externalDocumentationUrl": null
+        }
+      ]
+    },
+    "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/název-šablony-ppp": {
+      "id": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/název-šablony-ppp",
+      "iri": null,
+      "type": [
+        "relationship"
+      ],
+      "name": {},
+      "description": {},
+      "nameProperty": null,
+      "descriptionProperty": null,
+      "ends": [
+        {
+          "cardinality": [
+            0,
+            null
+          ],
+          "name": {},
+          "description": {},
+          "nameProperty": null,
+          "descriptionProperty": null,
+          "concept": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti",
+          "iri": null,
+          "externalDocumentationUrl": null
+        },
+        {
+          "cardinality": [
+            0,
+            null
+          ],
+          "name": {
+            "cs": "název šablony PPP"
+          },
+          "description": {
+            "cs": "Název šablony (typu) práva, povinnosti a právní skutečnosti."
+          },
+          "nameProperty": null,
+          "descriptionProperty": null,
+          "concept": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "iri": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/název-šablony-ppp",
+          "externalDocumentationUrl": null
+        }
+      ]
+    },
+    "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/platnost-šablony-ppp-od": {
+      "id": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/platnost-šablony-ppp-od",
+      "iri": null,
+      "type": [
+        "relationship"
+      ],
+      "name": {},
+      "description": {},
+      "nameProperty": null,
+      "descriptionProperty": null,
+      "ends": [
+        {
+          "cardinality": [
+            0,
+            null
+          ],
+          "name": {},
+          "description": {},
+          "nameProperty": null,
+          "descriptionProperty": null,
+          "concept": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti",
+          "iri": null,
+          "externalDocumentationUrl": null
+        },
+        {
+          "cardinality": [
+            0,
+            null
+          ],
+          "name": {
+            "cs": "platnost šablony PPP od"
+          },
+          "description": {
+            "cs": "Datum, od kdy šablona (typ) platí."
+          },
+          "nameProperty": null,
+          "descriptionProperty": null,
+          "concept": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "iri": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/platnost-šablony-ppp-od",
+          "externalDocumentationUrl": null
+        }
+      ]
+    },
+    "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy": {
+      "id": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy",
+      "iri": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy",
+      "name": {
+        "cs": "Služba veřejné správy"
+      },
+      "description": {
+        "cs": "Služba veřejné správy představuje funkci (činnost) úřadu, která je vědomě poskytnuta konkrétním OVM konkrétnímu příjemci služby podle příslušného právního předpisu tak, že přináší příjemci vnímanou hodnotu, ať už v podobě benefitu nebo splnění zákonné povinnosti. Evidují se pouze takové služby VS, během nichž dochází k interakci mezi OVM a klientem či naopak, nikoli k interakci mezi OVM a OVM. Na službu VS lze také pohlížet jako na dosažení práva či naplnění povinnosti klienta, které nelze splnit jinak než interakcí či sérií interakcí mezi klientem a OVM. Služba se dělí podle toho, zdali je iniciována klientem nebo vykonávaná z moci úřední. Každá služba se skládá z nejméně jednoho úkonu."
+      },
+      "nameProperty": null,
+      "descriptionProperty": null,
+      "type": [
+        "class"
+      ],
+      "externalDocumentationUrl": null
+    },
+    "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/ppp-vzniká-na-základě-služby": {
+      "id": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/ppp-vzniká-na-základě-služby",
+      "iri": null,
+      "type": [
+        "relationship"
+      ],
+      "name": {
+        "cs": "PPP vzniká na základě služby"
+      },
+      "description": {
+        "cs": "Uživatel služby má právo na zápis práva, povinnosti nebo právní skutečnosti, která se jej týká a vyplývá z úkonu orgánu veřejné moci uvedeného v katalogu služeb, do registru práv a povinností, nejsou-li právo, povinnost nebo právní skutečnost zapsány v základním registru nebo agendovém informačním systému."
+      },
+      "nameProperty": null,
+      "descriptionProperty": null,
+      "ends": [
+        {
+          "name": {},
+          "description": {},
+          "nameProperty": null,
+          "descriptionProperty": null,
+          "concept": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti",
+          "iri": null,
+          "externalDocumentationUrl": null
+        },
+        {
+          "cardinality": [
+            0,
+            null
+          ],
+          "name": {
+            "cs": "PPP vzniká na základě služby"
+          },
+          "description": {
+            "cs": "Uživatel služby má právo na zápis práva, povinnosti nebo právní skutečnosti, která se jej týká a vyplývá z úkonu orgánu veřejné moci uvedeného v katalogu služeb, do registru práv a povinností, nejsou-li právo, povinnost nebo právní skutečnost zapsány v základním registru nebo agendovém informačním systému."
+          },
+          "nameProperty": null,
+          "descriptionProperty": null,
+          "concept": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy",
+          "iri": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/ppp-vzniká-na-základě-služby",
+          "externalDocumentationUrl": null
+        }
+      ]
+    },
+    "https://slovník.gov.cz/agendový/104/pojem/má-název-služby": {
+      "id": "https://slovník.gov.cz/agendový/104/pojem/má-název-služby",
+      "iri": null,
+      "type": [
+        "relationship"
+      ],
+      "name": {},
+      "description": {},
+      "nameProperty": null,
+      "descriptionProperty": null,
+      "ends": [
+        {
+          "cardinality": [
+            0,
+            null
+          ],
+          "name": {},
+          "description": {},
+          "nameProperty": null,
+          "descriptionProperty": null,
+          "concept": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy",
+          "iri": null,
+          "externalDocumentationUrl": null
+        },
+        {
+          "cardinality": [
+            0,
+            null
+          ],
+          "name": {
+            "cs": "Má název služby"
+          },
+          "description": {
+            "cs": "Název by měl klientovi stručně a jasně vystihnout, o jakou službu se jedná. Důležité je, aby byl nezaměnitelný s jinou službou, ale stále velmi jednoduchý, srozumitelný a zapamatovatelný. Měřítkem je, že název služby je používaný (bude používán) v běžném hovoru lidí."
+          },
+          "nameProperty": null,
+          "descriptionProperty": null,
+          "concept": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "iri": "https://slovník.gov.cz/agendový/104/pojem/má-název-služby",
+          "externalDocumentationUrl": null
+        }
+      ]
+    },
+    "https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby": {
+      "id": "https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby",
+      "iri": null,
+      "type": [
+        "relationship"
+      ],
+      "name": {},
+      "description": {},
+      "nameProperty": null,
+      "descriptionProperty": null,
+      "ends": [
+        {
+          "cardinality": [
+            0,
+            null
+          ],
+          "name": {},
+          "description": {},
+          "nameProperty": null,
+          "descriptionProperty": null,
+          "concept": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy",
+          "iri": null,
+          "externalDocumentationUrl": null
+        },
+        {
+          "cardinality": [
+            0,
+            null
+          ],
+          "name": {
+            "cs": "Má identifikátor služby"
+          },
+          "description": {
+            "cs": "Automaticky (stejně jako v případě agendy nebo činnosti) generovaný kód sloužící pro databázové zpracování údajů."
+          },
+          "nameProperty": null,
+          "descriptionProperty": null,
+          "concept": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "iri": "https://slovník.gov.cz/agendový/104/pojem/má-identifikátor-služby",
+          "externalDocumentationUrl": null
+        }
+      ]
+    },
+    "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda": {
+      "id": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda",
+      "iri": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda",
+      "name": {
+        "cs": "Agenda"
+      },
+      "description": {
+        "cs": "Ucelená oblast působnosti orgánu veřejné moci nebo ucelená oblast působení soukromoprávního uživatele údajů."
+      },
+      "nameProperty": null,
+      "descriptionProperty": null,
+      "type": [
+        "class"
+      ],
+      "externalDocumentationUrl": null
+    },
+    "https://slovník.gov.cz/agendový/104/pojem/je-poskytována-v-rámci-agendy": {
+      "id": "https://slovník.gov.cz/agendový/104/pojem/je-poskytována-v-rámci-agendy",
+      "iri": null,
+      "type": [
+        "relationship"
+      ],
+      "name": {
+        "cs": "Je poskytována v rámci agendy"
+      },
+      "description": {
+        "cs": "Přiřazuje úkon do agendy, v rámci které je vykonáván. Úkon je vždy vykonáván v právě jedné agendě. V jedné agendě může být vykonáváno více úkonů."
+      },
+      "nameProperty": null,
+      "descriptionProperty": null,
+      "ends": [
+        {
+          "name": {},
+          "description": {},
+          "nameProperty": null,
+          "descriptionProperty": null,
+          "concept": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/služba-veřejné-správy",
+          "iri": null,
+          "externalDocumentationUrl": null
+        },
+        {
+          "cardinality": [
+            0,
+            null
+          ],
+          "name": {
+            "cs": "Je poskytována v rámci agendy"
+          },
+          "description": {
+            "cs": "Přiřazuje úkon do agendy, v rámci které je vykonáván. Úkon je vždy vykonáván v právě jedné agendě. V jedné agendě může být vykonáváno více úkonů."
+          },
+          "nameProperty": null,
+          "descriptionProperty": null,
+          "concept": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda",
+          "iri": "https://slovník.gov.cz/agendový/104/pojem/je-poskytována-v-rámci-agendy",
+          "externalDocumentationUrl": null
+        }
+      ]
+    },
+    "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy": {
+      "id": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy",
+      "iri": null,
+      "type": [
+        "relationship"
+      ],
+      "name": {},
+      "description": {},
+      "nameProperty": null,
+      "descriptionProperty": null,
+      "ends": [
+        {
+          "cardinality": [
+            0,
+            null
+          ],
+          "name": {},
+          "description": {},
+          "nameProperty": null,
+          "descriptionProperty": null,
+          "concept": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/agenda",
+          "iri": null,
+          "externalDocumentationUrl": null
+        },
+        {
+          "cardinality": [
+            0,
+            null
+          ],
+          "name": {
+            "cs": "Má kód agendy"
+          },
+          "description": {
+            "cs": "Kód agendy je veřejným identifikátorem, který je jednoznačně přiřazen záznamu o agendě v číselníku agend v registru práv a povinností."
+          },
+          "nameProperty": null,
+          "descriptionProperty": null,
+          "concept": "http://www.w3.org/2000/01/rdf-schema#Literal",
+          "iri": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-kód-agendy",
+          "externalDocumentationUrl": null
+        }
+      ]
+    },
+    "https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie": {
+      "id": "https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie",
+      "iri": "https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie",
+      "name": {
+        "cs": "Orgán veřejné moci nebo kategorie"
+      },
+      "description": {
+        "cs": "Orgán veřejné moci nebo kategorie"
+      },
+      "nameProperty": null,
+      "descriptionProperty": null,
+      "type": [
+        "class"
+      ],
+      "externalDocumentationUrl": null
+    },
+    "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat": {
+      "id": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat",
+      "iri": null,
+      "type": [
+        "relationship"
+      ],
+      "name": {
+        "cs": "správnost PPP má ověřovat"
+      },
+      "description": {
+        "cs": "Právo na zápis práva, povinnosti nebo právní skutečnosti uplatní uživatel služby prostřednictvím Agentury u příslušného orgánu veřejné moci, který učinil podkladový úkon. Příslušný orgán veřejné moci osvědčí existenci práva, povinnosti nebo právní skutečnosti a potvrdí ji Agentuře, která ji zapíše do registru práv a povinností."
+      },
+      "nameProperty": null,
+      "descriptionProperty": null,
+      "ends": [
+        {
+          "name": {},
+          "description": {},
+          "nameProperty": null,
+          "descriptionProperty": null,
+          "concept": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/šablona-práva--povinnosti-nebo-právní-skutečnosti",
+          "iri": null,
+          "externalDocumentationUrl": null
+        },
+        {
+          "cardinality": [
+            0,
+            null
+          ],
+          "name": {
+            "cs": "správnost PPP má ověřovat"
+          },
+          "description": {
+            "cs": "Právo na zápis práva, povinnosti nebo právní skutečnosti uplatní uživatel služby prostřednictvím Agentury u příslušného orgánu veřejné moci, který učinil podkladový úkon. Příslušný orgán veřejné moci osvědčí existenci práva, povinnosti nebo právní skutečnosti a potvrdí ji Agentuře, která ji zapíše do registru práv a povinností."
+          },
+          "nameProperty": null,
+          "descriptionProperty": null,
+          "concept": "https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie",
+          "iri": "https://slovník.gov.cz/generický/slovník-agendy-a112-správa-registru-rpp/pojem/správnost-ppp-má-ověřovat",
+          "externalDocumentationUrl": null
+        }
+      ]
+    },
+    "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonu": {
+      "id": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonu",
+      "iri": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonu",
+      "name": {
+        "cs": "Poskytování úkonu"
+      },
+      "description": {
+        "cs": "Konkrétní poskytování úkonu definované jako dvojice poskytovat úkonu a příslušná činnost agendy, v rámci které je úkon poskytovatelem poskytován."
+      },
+      "nameProperty": null,
+      "descriptionProperty": null,
+      "type": [
+        "class"
+      ],
+      "externalDocumentationUrl": null
+    },
+    "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-poskytovatele": {
+      "id": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-poskytovatele",
+      "iri": null,
+      "type": [
+        "relationship"
+      ],
+      "name": {
+        "cs": "Má poskytovatele"
+      },
+      "description": {
+        "cs": "Určuje poskytovatele úkonu, kterým je vždy orgán veřejné moci nebo jejich kategorie. Jeden úkon může mít více poskytovatelů. Jeden poskytovatel může poskytovat více úkonů."
+      },
+      "nameProperty": null,
+      "descriptionProperty": null,
+      "ends": [
+        {
+          "name": {},
+          "description": {},
+          "nameProperty": null,
+          "descriptionProperty": null,
+          "concept": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/poskytování-úkonu",
+          "iri": null,
+          "externalDocumentationUrl": null
+        },
+        {
+          "cardinality": [
+            0,
+            null
+          ],
+          "name": {
+            "cs": "Má poskytovatele"
+          },
+          "description": {
+            "cs": "Určuje poskytovatele úkonu, kterým je vždy orgán veřejné moci nebo jejich kategorie. Jeden úkon může mít více poskytovatelů. Jeden poskytovatel může poskytovat více úkonů."
+          },
+          "nameProperty": null,
+          "descriptionProperty": null,
+          "concept": "https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie",
+          "iri": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/má-poskytovatele",
+          "externalDocumentationUrl": null
+        }
+      ]
+    },
+    "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci": {
+      "id": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci",
+      "iri": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci",
+      "name": {
+        "cs": "Orgán veřejné moci"
+      },
+      "description": {
+        "cs": "Orgánem veřejné moci se rozumí státní orgán, územní samosprávný celek a fyzická nebo právnická osoba, byla-li jí svěřena působnost v oblasti veřejné správy."
+      },
+      "nameProperty": null,
+      "descriptionProperty": null,
+      "type": [
+        "class"
+      ],
+      "externalDocumentationUrl": null
+    },
+    "https://dataspecer.com/semantic-models/generalizationfromIri=https%3A%2F%2Fslovn%C3%ADk.gov.cz%2Flegislativn%C3%AD%2Fsb%C3%ADrka%2F111%2F2009%2Fpojem%2Forg%C3%A1n-ve%C5%99ejn%C3%A9-moci&toIri=https%3A%2F%2Fslovn%C3%ADk.gov.cz%2Fagendov%C3%BD%2F104%2Fpojem%2Forg%C3%A1n-ve%C5%99ejn%C3%A9-moci-nebo-kategorie": {
+      "id": "https://dataspecer.com/semantic-models/generalizationfromIri=https%3A%2F%2Fslovn%C3%ADk.gov.cz%2Flegislativn%C3%AD%2Fsb%C3%ADrka%2F111%2F2009%2Fpojem%2Forg%C3%A1n-ve%C5%99ejn%C3%A9-moci&toIri=https%3A%2F%2Fslovn%C3%ADk.gov.cz%2Fagendov%C3%BD%2F104%2Fpojem%2Forg%C3%A1n-ve%C5%99ejn%C3%A9-moci-nebo-kategorie",
+      "iri": null,
+      "child": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci",
+      "parent": "https://slovník.gov.cz/agendový/104/pojem/orgán-veřejné-moci-nebo-kategorie",
+      "type": [
+        "generalization"
+      ]
+    },
+    "https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-práva": {
+      "id": "https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-práva",
+      "iri": "https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-práva",
+      "name": {
+        "en": "Legal Subject",
+        "cs": "Subjekt práva"
+      },
+      "description": {
+        "cs": "Subjekt práva je osoba,  která se účastní právních vztahů.",
+        "en": "Legal Subject is a person participating in one or more legal relationships."
+      },
+      "nameProperty": null,
+      "descriptionProperty": null,
+      "type": [
+        "class"
+      ],
+      "externalDocumentationUrl": null
+    },
+    "https://slovník.gov.cz/veřejný-sektor/pojem/právnická-osoba": {
+      "id": "https://slovník.gov.cz/veřejný-sektor/pojem/právnická-osoba",
+      "iri": "https://slovník.gov.cz/veřejný-sektor/pojem/právnická-osoba",
+      "name": {
+        "cs": "Právnická osoba",
+        "en": "Legal Entity"
+      },
+      "description": {
+        "en": "Legal Person is an organization as a legal subject.",
+        "cs": "Právnická osoba je organizací, která je subjektem práva."
+      },
+      "nameProperty": null,
+      "descriptionProperty": null,
+      "type": [
+        "class"
+      ],
+      "externalDocumentationUrl": null
+    },
+    "https://dataspecer.com/semantic-models/generalizationfromIri=https%3A%2F%2Fslovn%C3%ADk.gov.cz%2Fve%C5%99ejn%C3%BD-sektor%2Fpojem%2Fpr%C3%A1vnick%C3%A1-osoba&toIri=https%3A%2F%2Fslovn%C3%ADk.gov.cz%2Fve%C5%99ejn%C3%BD-sektor%2Fpojem%2Fsubjekt-pr%C3%A1va": {
+      "id": "https://dataspecer.com/semantic-models/generalizationfromIri=https%3A%2F%2Fslovn%C3%ADk.gov.cz%2Fve%C5%99ejn%C3%BD-sektor%2Fpojem%2Fpr%C3%A1vnick%C3%A1-osoba&toIri=https%3A%2F%2Fslovn%C3%ADk.gov.cz%2Fve%C5%99ejn%C3%BD-sektor%2Fpojem%2Fsubjekt-pr%C3%A1va",
+      "iri": null,
+      "child": "https://slovník.gov.cz/veřejný-sektor/pojem/právnická-osoba",
+      "parent": "https://slovník.gov.cz/veřejný-sektor/pojem/subjekt-práva",
+      "type": [
+        "generalization"
+      ]
+    },
+    "https://slovník.gov.cz/veřejný-sektor/pojem/organizace": {
+      "id": "https://slovník.gov.cz/veřejný-sektor/pojem/organizace",
+      "iri": "https://slovník.gov.cz/veřejný-sektor/pojem/organizace",
+      "name": {
+        "cs": "Organizace",
+        "en": "Organization"
+      },
+      "description": {
+        "cs": "Organizace je uskupení lidí, které je agentem.",
+        "en": "Organization is any group of people, which is also an agent."
+      },
+      "nameProperty": null,
+      "descriptionProperty": null,
+      "type": [
+        "class"
+      ],
+      "externalDocumentationUrl": null
+    },
+    "https://dataspecer.com/semantic-models/generalizationfromIri=https%3A%2F%2Fslovn%C3%ADk.gov.cz%2Fve%C5%99ejn%C3%BD-sektor%2Fpojem%2Forganizace&toIri=https%3A%2F%2Fslovn%C3%ADk.gov.cz%2Fve%C5%99ejn%C3%BD-sektor%2Fpojem%2Fpr%C3%A1vnick%C3%A1-osoba": {
+      "id": "https://dataspecer.com/semantic-models/generalizationfromIri=https%3A%2F%2Fslovn%C3%ADk.gov.cz%2Fve%C5%99ejn%C3%BD-sektor%2Fpojem%2Forganizace&toIri=https%3A%2F%2Fslovn%C3%ADk.gov.cz%2Fve%C5%99ejn%C3%BD-sektor%2Fpojem%2Fpr%C3%A1vnick%C3%A1-osoba",
+      "iri": null,
+      "child": "https://slovník.gov.cz/veřejný-sektor/pojem/organizace",
+      "parent": "https://slovník.gov.cz/veřejný-sektor/pojem/právnická-osoba",
+      "type": [
+        "generalization"
+      ]
+    },
+    "https://slovník.gov.cz/veřejný-sektor/pojem/orgán-veřejné-moci": {
+      "id": "https://slovník.gov.cz/veřejný-sektor/pojem/orgán-veřejné-moci",
+      "iri": "https://slovník.gov.cz/veřejný-sektor/pojem/orgán-veřejné-moci",
+      "name": {
+        "en": "Public Authority",
+        "cs": "Orgán veřejné moci"
+      },
+      "description": {
+        "cs": "Orgán veřejné moci  je organizace, která reprezentuje veřejnou moc a je ze zákona oprávněna autoritativně rozhodovat o právech a povinnostech osob.",
+        "en": "Public Authority is an organization which has a legal mandate to govern, administrate some part of public life."
+      },
+      "nameProperty": null,
+      "descriptionProperty": null,
+      "type": [
+        "class"
+      ],
+      "externalDocumentationUrl": null
+    },
+    "https://dataspecer.com/semantic-models/generalizationfromIri=https%3A%2F%2Fslovn%C3%ADk.gov.cz%2Fve%C5%99ejn%C3%BD-sektor%2Fpojem%2Forg%C3%A1n-ve%C5%99ejn%C3%A9-moci&toIri=https%3A%2F%2Fslovn%C3%ADk.gov.cz%2Fve%C5%99ejn%C3%BD-sektor%2Fpojem%2Forganizace": {
+      "id": "https://dataspecer.com/semantic-models/generalizationfromIri=https%3A%2F%2Fslovn%C3%ADk.gov.cz%2Fve%C5%99ejn%C3%BD-sektor%2Fpojem%2Forg%C3%A1n-ve%C5%99ejn%C3%A9-moci&toIri=https%3A%2F%2Fslovn%C3%ADk.gov.cz%2Fve%C5%99ejn%C3%BD-sektor%2Fpojem%2Forganizace",
+      "iri": null,
+      "child": "https://slovník.gov.cz/veřejný-sektor/pojem/orgán-veřejné-moci",
+      "parent": "https://slovník.gov.cz/veřejný-sektor/pojem/organizace",
+      "type": [
+        "generalization"
+      ]
+    },
+    "https://dataspecer.com/semantic-models/generalizationfromIri=https%3A%2F%2Fslovn%C3%ADk.gov.cz%2Flegislativn%C3%AD%2Fsb%C3%ADrka%2F111%2F2009%2Fpojem%2Forg%C3%A1n-ve%C5%99ejn%C3%A9-moci&toIri=https%3A%2F%2Fslovn%C3%ADk.gov.cz%2Fve%C5%99ejn%C3%BD-sektor%2Fpojem%2Forg%C3%A1n-ve%C5%99ejn%C3%A9-moci": {
+      "id": "https://dataspecer.com/semantic-models/generalizationfromIri=https%3A%2F%2Fslovn%C3%ADk.gov.cz%2Flegislativn%C3%AD%2Fsb%C3%ADrka%2F111%2F2009%2Fpojem%2Forg%C3%A1n-ve%C5%99ejn%C3%A9-moci&toIri=https%3A%2F%2Fslovn%C3%ADk.gov.cz%2Fve%C5%99ejn%C3%BD-sektor%2Fpojem%2Forg%C3%A1n-ve%C5%99ejn%C3%A9-moci",
+      "iri": null,
+      "child": "https://slovník.gov.cz/legislativní/sbírka/111/2009/pojem/orgán-veřejné-moci",
+      "parent": "https://slovník.gov.cz/veřejný-sektor/pojem/orgán-veřejné-moci",
+      "type": [
+        "generalization"
+      ]
+    }
+  }
+}

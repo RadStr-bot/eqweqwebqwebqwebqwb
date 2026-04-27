@@ -1,0 +1,17 @@
+{
+  "iri": "48cf867f-5a57-4cf4-95a0-45ad549d8eb4",
+  "projectIri": "48cf867f-5a57-4cf4-95a0-45ad549d8eb4",
+  "types": [
+    "http://dataspecer.com/resources/local/semantic-model"
+  ],
+  "userMetadata": {
+    "label": {
+      "en": "SGOV cache",
+      "cs": "SGOV cache"
+    }
+  },
+  "metadata": {},
+  "_version": 1,
+  "_exportVersion": 2,
+  "_exportedBy": "http://localhost:3100"
+}

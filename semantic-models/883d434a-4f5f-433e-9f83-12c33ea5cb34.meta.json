@@ -1,0 +1,17 @@
+{
+  "iri": "883d434a-4f5f-433e-9f83-12c33ea5cb34",
+  "projectIri": "883d434a-4f5f-433e-9f83-12c33ea5cb34",
+  "types": [
+    "http://dataspecer.com/resources/local/semantic-model"
+  ],
+  "userMetadata": {
+    "label": {
+      "en": "Main Application Profile",
+      "cs": "Hlavní aplikační profil"
+    }
+  },
+  "metadata": {},
+  "_version": 1,
+  "_exportVersion": 2,
+  "_exportedBy": "http://localhost:3100"
+}

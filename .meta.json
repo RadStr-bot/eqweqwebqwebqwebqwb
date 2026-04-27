@@ -1,0 +1,17 @@
+{
+  "iri": "b500b143-5e00-44d0-91f2-681af4773e7e",
+  "projectIri": "b500b143-5e00-44d0-91f2-681af4773e7e",
+  "types": [
+    "http://dataspecer.com/resources/local/package"
+  ],
+  "userMetadata": {
+    "tags": [],
+    "label": {
+      "cs": "TestovacíDatovéSchéma"
+    }
+  },
+  "metadata": {},
+  "_version": 1,
+  "_exportVersion": 2,
+  "_exportedBy": "http://localhost:3100"
+}
